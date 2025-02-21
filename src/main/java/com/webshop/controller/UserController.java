@@ -2,11 +2,12 @@ package com.webshop.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.webshop.domain.UserModel;
 import com.webshop.service.UserService;
-
-
 
 @Controller
 public class UserController {
@@ -20,36 +21,22 @@ public class UserController {
     @RequestMapping("/")
     public String getHomePage(Model model) {
         String test = userService.HandleHello();
-        model.addAttribute("test", test);
-        model.addAttribute("testCommanWithController", "John");
+        model.addAttribute("fromUserService", test);
+        model.addAttribute("editFromController", "Test with Controller");
+        return "index";
+    }
+    
+    @RequestMapping("/admin/user")
+    public String getUserPage(Model model) {
+        String test = userService.HandleHello();
+        model.addAttribute("newUser", new UserModel());
+        return "admin/user/create";
+    }
+
+    @RequestMapping(value = "/admin/user/create1", method = RequestMethod.POST)
+    public String createUserPage(Model model, @ModelAttribute("newUser") UserModel newUser) {
+        System.out.println("Run here: " + newUser);
         return "index";
     }
 
-    @RequestMapping("/admin/user")
-    public String getUserPage(Model model) {
-        model.addAttribute("test", "About");
-        return "admin/user/create";
-    }
-    
 }
-
-
-
-
-
-
-// @RestController
-// public class UserController {
-
-//     private HelloService helloService;
-
-//     public UserController(HelloService helloService) {
-//         this.helloService = helloService;
-//     }
-
-//     @GetMapping("/")
-//     public String HandleHello() {
-//         return helloService.HandleHello();
-//     }
-    
-// }

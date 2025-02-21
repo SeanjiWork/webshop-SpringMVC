@@ -1,5 +1,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +18,7 @@
 
 </head>
 <body>
-    
+
 <div class="container mt-5">
     <div class="card mb-3">
         <div class="card-header">
@@ -26,55 +27,52 @@
 
         <div class="card-body">
 
-            <form id="formSubmit">
-                <!-- Category -->
+            <form:form method="post" action="/admin/user/create1" modelAttribute="newUser">
+                <!-- Email -->
                 <div class="form-group mb-3">
-                    <label for="username">Username</label>
-                    <input type="text" class="form-control" id="username" name="username" value=""
-                           placeholder="Enter title">
+                    <label class="form-label">Email</label>
+                    <form:input type="email" class="form-control" path="email"
+                                placeholder="Enter your email"/>
                 </div>
 
-                <!-- Title -->
+                <!-- Password -->
                 <div class="form-group mb-3">
-                    <label for="password">Password</label>
-                    <input type="password" class="form-control" id="password" name="password" value=""
-                           placeholder="Enter title">
+                    <label class="form-label">Password</label>
+                    <form:input type="password" class="form-control" path="password"
+                                placeholder="Enter your password"/>
                 </div>
 
-                <!-- Image -->
+                <!-- FullName -->
                 <div class="form-group mb-3">
-                    <label for="email">Email</label>
-                    <input type="text" class="form-control" id="email" name="email" value=""
-                           placeholder="Enter your email">
+                    <label class="form-label">Fullname</label>
+                    <form:input type="text" class="form-control" path="fullname"
+                                placeholder="Enter your fullname"/>
                 </div>
 
-                <!-- Short Description -->
+                <!-- Phone -->
                 <div class="form-group mb-3">
-                    <label for="phone">Phone</label>
-                    <input class="form-control" id="phone" name="phone"
-                           placeholder="Enter your phonenumber">
+                    <label class="form-label">Phone</label>
+                    <form:input class="form-control" path="phone"
+                                placeholder="Enter your phonenumber"/>
                 </div>
 
-                <!-- Content -->
+                <!-- Address -->
                 <div class="form-group mb-3">
-                    <label for="address">Address</label>
-                    <textarea class="form-control" id="address" name="address"
-                              rows="4" placeholder="Enter your address"></textarea>
+                    <label class="form-label">Address</label>
+                    <form:textarea class="form-control" path="address"
+                                   rows="4" placeholder="Enter your address"/>
                 </div>
 
                 <br>
                 <!-- Buttons -->
                 <div class="form-group text-center mb-3">
-                    <button type="button" class="btn btn-success btn-lg" id="submit">
+                    <button type="submit" class="btn btn-success btn-lg" id="submit">
                         <i class="fas fa-plus"></i> Submit
                     </button>
                 </div>
-            </form>
+            </form:form>
         </div>
-
-
-        <div class="card-footer text-muted">Updated
-            yesterday at 11:59 PM
+        <div class="card-footer text-muted">
         </div>
     </div>
 </div>
