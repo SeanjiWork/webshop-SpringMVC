@@ -20,22 +20,21 @@ public class UserController {
 
     @RequestMapping("/")
     public String getHomePage(Model model) {
-        String test = userService.HandleHello();
-        model.addAttribute("fromUserService", test);
+        model.addAttribute("fromUserService", "test");
         model.addAttribute("editFromController", "Test with Controller");
         return "index";
     }
-    
+
     @RequestMapping("/admin/user")
     public String getUserPage(Model model) {
-        String test = userService.HandleHello();
         model.addAttribute("newUser", new UserModel());
         return "admin/user/create";
     }
 
     @RequestMapping(value = "/admin/user/create1", method = RequestMethod.POST)
     public String createUserPage(Model model, @ModelAttribute("newUser") UserModel newUser) {
-        System.out.println("Run here: " + newUser);
+        this.userService.HandleSaveUser(newUser);
+        System.out.println("Run here through Controller: " + newUser);
         return "index";
     }
 
