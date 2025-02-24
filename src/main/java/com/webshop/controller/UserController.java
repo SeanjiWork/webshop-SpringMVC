@@ -1,5 +1,7 @@
 package com.webshop.controller;
 
+import java.util.List;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -18,24 +20,35 @@ public class UserController {
         this.userService = userService;
     }
 
-    @RequestMapping("/")
+    @   RequestMapping("/")
     public String getHomePage(Model model) {
+        List<UserModel> users = this.userService.getAllUser();
+        System.out.println("data here: " + users);
+
         model.addAttribute("fromUserService", "test");
         model.addAttribute("editFromController", "Test with Controller");
         return "index";
     }
 
-    @RequestMapping("/admin/user")
-    public String getUserPage(Model model) {
+    @RequestMapping("/admin/user/create")
+    public String getCreateUserPage(Model model) {
         model.addAttribute("newUser", new UserModel());
         return "admin/user/create";
     }
 
-    @RequestMapping(value = "/admin/user/create1", method = RequestMethod.POST)
+       @RequestMapping("/admin/user")
+    public String getUserPage(Model model) {
+        model.addAttribute("newUser", new UserModel());
+        return "admin/user/table-user";
+    }
+
+    
+
+    @RequestMapping(value = "/admin/user/", method = RequestMethod.POST)
     public String createUserPage(Model model, @ModelAttribute("newUser") UserModel newUser) {
         this.userService.HandleSaveUser(newUser);
         System.out.println("Run here through Controller: " + newUser);
-        return "index";
+        return "admin/user/table-user";
     }
 
 }
