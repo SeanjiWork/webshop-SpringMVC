@@ -25,6 +25,11 @@ public class UserService {
     }
 
     public UserModel HandleSaveUser(UserModel user) {
-        return this.userRepository.save(user);
+        user = userRepository.save(user);
+        return user;
+    }
+
+    public UserModel getUserById(long id) {
+        return userRepository.findById(id);
     }
 }

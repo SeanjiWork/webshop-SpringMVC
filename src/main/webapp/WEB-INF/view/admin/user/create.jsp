@@ -24,7 +24,7 @@
 
         <div class="card-body">
 
-            <form:form method="post" action="/admin/user/" modelAttribute="newUser">
+            <form:form method="post" action="/admin/user/create" modelAttribute="newUser">
                 <!-- Email -->
                 <div class="form-group mb-3">
                     <label class="form-label">Email</label>

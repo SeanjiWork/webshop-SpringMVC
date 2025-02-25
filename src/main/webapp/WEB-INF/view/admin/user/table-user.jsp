@@ -5,10 +5,12 @@
   Time: 15:27
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@page contentType="text/html" pageEncoding="UTF-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <html>
 <head>
-  <title>List User</title>
+  <title>Table Users</title>
   <!-- Latest compiled and minified CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
         rel="stylesheet">
@@ -26,9 +28,11 @@
     <div class="col-12 mx-auto">
       <div class="d-flex justify-content-between">
         <h3>Table Users</h3>
-        <a href="/admin/user/create" class="btn btn-outline-primary">Primary</a>
+        <a href="/admin/user/create" class="btn btn-outline-primary">Create a user</a>
       </div>
       <hr>
+
+
       <table class="table table-hover">
         <thead>
         <tr>
@@ -39,36 +43,18 @@
         </tr>
         </thead>
         <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>
-            <button type="button" class="btn btn-outline-success">View</button>
-            <button type="button" class="btn btn-outline-warning">Update</button>
-            <button type="button" class="btn btn-outline-danger">Delete</button>
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>
-            <button type="button" class="btn btn-outline-success">View</button>
-            <button type="button" class="btn btn-outline-warning">Update</button>
-            <button type="button" class="btn btn-outline-danger">Delete</button>
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>Larry the Bird</td>
-          <td>Larry the Bird</td>
-          <td>
-            <button type="button" class="btn btn-outline-success">View</button>
-            <button type="button" class="btn btn-outline-warning">Update</button>
-            <button type="button" class="btn btn-outline-danger">Delete</button>
-          </td>
-        </tr>
+            <c:forEach var="user" items="${users}">
+                <tr>
+                    <td scope="row">${user.id}</td>
+                    <td>${user.email}</td>
+                    <td>${user.fullname}</td>
+                    <td>
+                        <a href="/admin/user/${user.id}" class="btn btn-outline-success">View</a>
+                        <button type="button" class="btn btn-outline-warning">Update</button>
+                        <button type="button" class="btn btn-outline-danger">Delete</button>
+                    </td>
+                </tr>
+            </c:forEach>
         </tbody>
       </table>
     </div>
