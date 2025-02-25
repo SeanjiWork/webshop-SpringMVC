@@ -36,7 +36,7 @@
       <table class="table table-hover">
         <thead>
         <tr>
-          <th scope="col">#</th>
+          <th scope="col">ID</th>
           <th scope="col">Email</th>
           <th scope="col">Fullname</th>
           <th scope="col">Action</th>
@@ -50,7 +50,7 @@
                     <td>${user.fullname}</td>
                     <td>
                         <a href="/admin/user/${user.id}" class="btn btn-outline-success">View</a>
-                        <button type="button" class="btn btn-outline-warning">Update</button>
+                        <a href="/admin/user/update/${user.id}" class="btn btn-outline-warning">Update</a>
                         <button type="button" class="btn btn-outline-danger">Delete</button>
                     </td>
                 </tr>
