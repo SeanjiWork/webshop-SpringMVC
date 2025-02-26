@@ -83,10 +83,24 @@ public class UserController {
             
             this.userService.HandleSaveUser(currentUser);  
         }
-        
         return "redirect:/admin/user";
     }
     
-    
+
+    @GetMapping("/admin/user/delete/{id}")
+    public String getDeleteUser(Model model, @PathVariable long id) {
+        model.addAttribute("id", id);
+        UserModel user = new UserModel();
+        user.setId(id);
+
+        model.addAttribute("deleteUser", user);
+        return "admin/user/delete";
+    }
+
+    @PostMapping("/admin/user/delete")
+    public String deleteUser(Model model, @ModelAttribute("deleteModel") UserModel idUser) {
+        this.userService.deleteUser(idUser.getId());
+        return "redirect:/admin/user";
+    }
 
 }
