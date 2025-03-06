@@ -5,17 +5,17 @@ import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.webshop.domain.UserModel;
+import com.webshop.domain.User;
 
 @Repository
-public interface UserRepository extends JpaRepository<UserModel, Long> {
-    UserModel save(UserModel user);
+public interface UserRepository extends JpaRepository<User, Long> {
+    User save(User user);
 
-    List<UserModel> findByAddress(String address);
+    List<User> findByAddress(String address);
 
-    List<UserModel> findAll();
+    List<User> findAll();
     
-    UserModel findById(long id);
+    User findById(long id);
 
     void deleteById(long id);
 }

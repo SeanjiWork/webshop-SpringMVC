@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.webshop.domain.UserModel;
+import com.webshop.domain.User;
 import com.webshop.repository.UserRepository;
 
 @Service
@@ -16,20 +16,20 @@ public class UserService {
         this.userRepository = userRepository;
     }
 
-    public List<UserModel> getAllUser() {
+    public List<User> getAllUser() {
         return this.userRepository.findAll();
     }
 
-    public List<UserModel> getAllUserByAddress(String address) {
+    public List<User> getAllUserByAddress(String address) {
         return this.userRepository.findByAddress(address);
     }
 
-    public UserModel HandleSaveUser(UserModel user) {
+    public User HandleSaveUser(User user) {
         user = userRepository.save(user);
         return user;
     }
 
-    public UserModel getUserById(long id) {
+    public User getUserById(long id) {
         return userRepository.findById(id);
     }
 
