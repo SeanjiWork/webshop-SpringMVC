@@ -1,4 +1,4 @@
-package com.webshop.controller;
+package com.webshop.controller.admin;
 
 import java.util.List;
 
@@ -41,7 +41,7 @@ public class UserController {
             List<User> users = this.userService.getAllUser();
             System.out.println("data here: " + users);
             model.addAttribute("users", users);
-            return "admin/user/table-user";
+            return "admin/user/show";
     }
 
     @RequestMapping("/admin/user/create")
@@ -62,7 +62,7 @@ public class UserController {
         User user = this.userService.getUserById(id);
         model.addAttribute("user", user);
         model.addAttribute("id", id);
-        return "admin/user/show";
+        return "admin/user/detail";
     }
 
     @RequestMapping("/admin/user/update/{id}")
