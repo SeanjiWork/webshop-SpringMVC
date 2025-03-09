@@ -1,0 +1,57 @@
+/* Tiêu đề avatar */
+.heading {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.image-container {
+    width: 150px; /* Đảm bảo khung là hình vuông */
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden; /* Cắt bỏ phần dư thừa */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+    background-color: #f8f9fa;
+    position: relative;
+    border: 2px solid #ccc;
+}
+
+.image-preview {
+    /*width: 100%;*/
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    display: none;
+}
+
+/* Input file */
+.input-file {
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    margin: 5px auto;
+}
+
+/* Nút xóa */
+.btn-delete {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    margin: 5px auto;
+}
+
+.btn-delete:hover {
+    background-color: #c82333;
+}
