@@ -46,7 +46,9 @@
 
                     <div class="card-body">
 
-                        <form:form method="post" action="/admin/user/create" modelAttribute="newUser" class="row">
+                        <form:form method="post" action="/admin/user/create"
+                                   modelAttribute="newUser" class="row"
+                                   enctype="multipart/form-data">
 
                             <!-- Avatar -->
                             <div class="form-group mb-3">
@@ -56,7 +58,7 @@
                                 </div>
 
                                 <div class="btn-container">
-                                    <input type="file" name="photograph" id="photo" class="input-file">
+                                    <input type="file" name="imageFile" id="photo" class="input-file">
                                     <button type="button" id="deleteBtn" class="btn-delete">Delete Image</button>
                                 </div>
                             </div>
@@ -92,11 +94,10 @@
                             <!-- Role -->
                             <div class="form-group mb-3 col-12 col-md-6">
                                 <label class="form-label">Roles</label>
-                                <select class="form-select" aria-label="Default select example">
-                                    <option selected>Choose roles</option>
-                                    <option value="ADMIN">ADMIN</option>
-                                    <option value="USER">USER</option>
-                                </select>
+                                <form:select class="form-select" path="role.name" aria-label="Default select example">
+                                    <form:option value="ADMIN">ADMIN</form:option>
+                                    <form:option value="USER">USER</form:option>
+                                </form:select>
                             </div>
 
                             <!-- Address -->

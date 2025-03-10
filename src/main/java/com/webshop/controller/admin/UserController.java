@@ -9,9 +9,11 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
 
 import com.webshop.domain.User;
+import com.webshop.service.UploadService;
 import com.webshop.service.UserService;
 
 
@@ -19,10 +21,12 @@ import com.webshop.service.UserService;
 @Controller
 public class UserController {
 
-    private UserService userService;
+    private final UserService userService;
+    private final UploadService uploadService;
 
-    public UserController(UserService userService) {
+    public UserController(UserService userService, UploadService uploadService) {
         this.userService = userService;
+        this.uploadService = uploadService;
     }
 
     @RequestMapping("/")
@@ -50,12 +54,16 @@ public class UserController {
             return "admin/user/create";
     }
 
-    @RequestMapping(value = "/admin/user/create", method = RequestMethod.POST)
-    public String createUserPage(Model model, @ModelAttribute("newUser") User newUser) {
-            this.userService.HandleSaveUser(newUser);
-            System.out.println("Run here through Controller: " + newUser);
-            return "redirect:/admin/user";
-        }
+    @PostMapping(value = "/admin/user/create")
+    public String createUserPage(Model model, @ModelAttribute("newUser") User newUser,
+        @RequestParam("imageFile") MultipartFile file) {
+
+        String avatar = this.uploadService.handleSaveUploadFile(file, "avatar");
+
+//        this.userService.HandleSaveUser(newUser);
+        System.out.println("Run here through Controller: " + newUser);
+        return "redirect:/admin/user";
+    }
 
     @GetMapping("/admin/user/{id}")
     public String getUserDetailPage(Model model, @PathVariable long id) {
