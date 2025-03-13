@@ -17,63 +17,41 @@
           <div class="top_right text-right">
             <ul>
               <li class="currency">
-                <a href="#"
-                ><i class="fa fa-dollar"></i> US
-                  Dollar
-                  <i class="zmdi zmdi-caret-down"></i
-                  ></a>
+
+                <a href="#"><i class="fa fa-dollar"></i> US Dollar <i class="zmdi zmdi-caret-down"></i></a>
                 <ul class="dropdown_currency">
-                  <li><a href="#">EUR – Euro</a></li>
                   <li>
-                    <a href="#"
-                    >GBP – British Pound</a
-                    >
-                  </li>
+                    <a href="#">EUR – Euro</a></li>
                   <li>
-                    <a href="#"
-                    >INR – India Rupee</a
-                    >
-                  </li>
+                    <a href="#">GBP – British Pound</a></li>
+                  <li>
+                    <a href="#">INR – India Rupee</a></li>
                 </ul>
               </li>
               <li class="language">
-                <a href="#"
-                ><i class="zmdi zmdi-dribbble"></i>
-                  English1
-                  <i class="zmdi zmdi-caret-down"></i
-                  ></a>
+
+                <a href="#"><i class="zmdi zmdi-dribbble"></i> English1 <i
+                        class="zmdi zmdi-caret-down"></i></a>
                 <ul class="dropdown_language">
-                  <li><a href="#">English</a></li>
-                  <li><a href="#">Germany</a></li>
+                  <li>
+                    <a href="#">English</a></li>
+                  <li>
+                    <a href="#">Germany</a></li>
                 </ul>
               </li>
               <li class="top_links">
-                <a href="#"
-                ><i class="zmdi zmdi-account"></i>
-                  My account
-                  <i class="zmdi zmdi-caret-down"></i
-                  ></a>
+
+                <a href="#"><i class="zmdi zmdi-account"></i> My account <i
+                        class="zmdi zmdi-caret-down"></i></a>
                 <ul class="dropdown_links">
                   <li>
-                    <a href="checkout.html"
-                    >Checkout
-                    </a>
-                  </li>
+                    <a href="#">Checkout </a></li>
                   <li>
-                    <a href="my-account.html"
-                    >My Account
-                    </a>
-                  </li>
+                    <a href="#">My Account </a></li>
                   <li>
-                    <a href="cart.html"
-                    >Shopping Cart</a
-                    >
-                  </li>
+                    <a href="#">Shopping Cart</a></li>
                   <li>
-                    <a href="wishlist.html"
-                    >Wishlist</a
-                    >
-                  </li>
+                    <a href="#">Wishlist</a></li>
                 </ul>
               </li>
             </ul>
@@ -89,7 +67,7 @@
       <div class="row align-items-center">
         <div class="col-lg-3">
           <div class="logo">
-            <a href="index.html"
+            <a href="/"
             ><img src="client/img/logo/logo.png" alt=""
             /></a>
           </div>
@@ -98,151 +76,65 @@
           <div class="header_middle_inner">
             <div class="search-container">
               <form action="#">
-                <div class="hover_category">
-                  <select
-                          class="select_option"
-                          name="select"
-                          id="categori"
-                  >
-                    <option selected value="1">
-                      All Categories
-                    </option>
-                    <option value="2">
-                      Accessories
-                    </option>
-                    <option value="3">
-                      Accessories & More
-                    </option>
-                    <option value="4">
-                      Butters & Eggs
-                    </option>
-                    <option value="5">
-                      Camera & Video
-                    </option>
-                    <option value="6">
-                      Mornitors
-                    </option>
-                    <option value="7">
-                      Tablets
-                    </option>
-                    <option value="8">
-                      Laptops
-                    </option>
-                    <option value="9">
-                      Handbags
-                    </option>
-                    <option value="10">
-                      Headphone & Speaker
-                    </option>
-                    <option value="11">
-                      Herbs & botanicals
-                    </option>
-                    <option value="12">
-                      Vegetables
-                    </option>
-                    <option value="13">Shop</option>
-                    <option value="14">
-                      Laptops & Desktops
-                    </option>
-                    <option value="15">
-                      Watchs
-                    </option>
-                    <option value="16">
-                      Electronic
-                    </option>
-                  </select>
+                <div class="hover_category"><select class="select_option" name="select" id="categori">
+                  <option selected value="1"> All Categories</option>
+                  <option value="2"> Accessories</option>
+                  <option value="3"> Accessories & More</option>
+                  <option value="4"> Butters & Eggs</option>
+                  <option value="5"> Camera & Video</option>
+                  <option value="6"> Mornitors</option>
+                  <option value="7"> Tablets</option>
+                  <option value="8"> Laptops</option>
+                  <option value="9"> Handbags</option>
+                  <option value="10"> Headphone & Speaker</option>
+                  <option value="11"> Herbs & botanicals</option>
+                  <option value="12"> Vegetables</option>
+                  <option value="13">Shop</option>
+                  <option value="14"> Laptops & Desktops</option>
+                  <option value="15"> Watchs</option>
+                  <option value="16"> Electronic</option>
+                </select>
                 </div>
-                <div class="search_box">
-                  <input
-                          placeholder="Search product..."
-                          type="text"
-                  />
-                  <button type="submit">
-                    <i class="zmdi zmdi-search"></i>
-                  </button>
+                <div class="search_box"><input placeholder="Search product..." type="text"/>
+                  <button type="submit"><i class="zmdi zmdi-search"></i></button>
                 </div>
               </form>
             </div>
             <div class="mini_cart_wrapper">
-              <a href="javascript:void(0)"
-              ><i
-                      class="zmdi zmdi-shopping-basket"
-              ></i>
+
+              <a href="javascript:void(0)"><i class="zmdi zmdi-shopping-basket"></i>
                 <span>2items - $213.00</span>
               </a>
               <!--mini cart-->
               <div class="mini_cart">
                 <div class="cart_item">
                   <div class="cart_img">
-                    <a href="#"
-                    ><img
-                            src="client/img/s-product/product.jpg"
-                            alt=""
-                    /></a>
-                  </div>
+                    <a href="#"><img src="client/img/s-product/product.jpg" alt=""/></a></div>
                   <div class="cart_info">
-                    <a href="#"
-                    >Condimentum Watches</a
-                    >
-
-                    <span class="quantity"
-                    >Qty: 1</span
-                    >
-                    <span class="price_cart"
-                    >$60.00</span
-                    >
+                    <a href="#">Condimentum Watches</a>
+                    <span class="quantity">Qty: 1</span> <span class="price_cart">$60.00</span>
                   </div>
                   <div class="cart_remove">
-                    <a href="#"
-                    ><i
-                            class="ion-android-close"
-                    ></i
-                    ></a>
-                  </div>
+                    <a href="#"><i class="ion-android-close"></i></a></div>
                 </div>
                 <div class="cart_item">
                   <div class="cart_img">
-                    <a href="#"
-                    ><img
-                            src="client/img/s-product/product2.jpg"
-                            alt=""
-                    /></a>
-                  </div>
+                    <a href="#"><img src="client/img/s-product/product2.jpg" alt=""/></a></div>
                   <div class="cart_info">
-                    <a href="#">Officiis debitis</a>
-                    <span class="quantity"
-                    >Qty: 1</span
-                    >
-                    <span class="price_cart"
-                    >$69.00</span
-                    >
-                  </div>
+                    <a href="#">Officiis debitis</a> <span class="quantity">Qty: 1</span> <span
+                          class="price_cart">$69.00</span></div>
                   <div class="cart_remove">
-                    <a href="#"
-                    ><i
-                            class="ion-android-close"
-                    ></i
-                    ></a>
-                  </div>
+                    <a href="#"><i class="ion-android-close"></i></a></div>
                 </div>
                 <div class="mini_cart_table">
-                  <div class="cart_total">
-                    <span>Subtotal:</span>
-                    <span class="price"
-                    >$138.00</span
-                    >
+                  <div class="cart_total"><span>Subtotal:</span> <span class="price">$138.00</span>
                   </div>
                 </div>
 
                 <div class="mini_cart_footer">
                   <div class="cart_button">
-                    <a href="cart.html"
-                    >View cart</a
-                    >
-                    <a href="checkout.html"
-                    >Checkout</a
-                    >
-                  </div>
+                    <a href="#">View cart</a>
+                    <a href="#">Checkout</a></div>
                 </div>
               </div>
               <!--mini cart end-->
@@ -265,455 +157,198 @@
             </div>
             <div class="categories_menu_toggle">
               <ul>
-                <li
-                        class="menu_item_children categorie_list"
-                >
-                  <a href="#"
-                  ><span
-                  ><i
-                          class="zmdi zmdi-desktop-mac"
-                  ></i
-                  ></span>
-                    Electronic
-                    <i class="fa fa-angle-right"></i
-                    ></a>
+                <li class="menu_item_children categorie_list">
+                  <a href="#"><span><i class="zmdi zmdi-desktop-mac"></i></span> Electronic <i
+                          class="fa fa-angle-right"></i></a>
                   <ul class="categories_mega_menu">
                     <li class="menu_item_children">
-                      <a href="#"
-                      >Wheel Bearings</a
-                      >
-                      <ul
-                              class="categorie_sub_menu"
-                      >
+                      <a href="#">Wheel Bearings</a>
+                      <ul class="categorie_sub_menu">
                         <li>
-                          <a href="">Bower</a>
-                        </li>
+                          <a href="#">Bower</a></li>
                         <li>
-                          <a href=""
-                          >Flipbac</a
-                          >
-                        </li>
+                          <a href="#">Flipbac</a></li>
                         <li>
-                          <a href=""
-                          >Gary Fong</a
-                          >
-                        </li>
+                          <a href="#">Gary Fong</a></li>
                         <li>
-                          <a href=""
-                          >GigaPan</a
-                          >
-                        </li>
+                          <a href="#">GigaPan</a></li>
                       </ul>
                     </li>
                     <li class="menu_item_children">
-                      <a href="#"
-                      >Wheel Rim Screws</a
-                      >
-                      <ul
-                              class="categorie_sub_menu"
-                      >
+                      <a href="#">Wheel Rim Screws</a>
+                      <ul class="categorie_sub_menu">
                         <li>
-                          <a href=""
-                          >Accessories</a
-                          >
-                        </li>
+                          <a href="#">Accessories</a></li>
                         <li>
-                          <a href=""
-                          >2-Stroke</a
-                          >
-                        </li>
+                          <a href="#">2-Stroke</a></li>
                         <li>
-                          <a href=""
-                          >Handbag</a
-                          >
-                        </li>
+                          <a href="#">Handbag</a></li>
                         <li>
-                          <a href=""
-                          >Clothing</a
-                          >
-                        </li>
+                          <a href="#">Clothing</a></li>
                       </ul>
                     </li>
-                    <li
-                            class="menu_item_children last_child"
-                    >
-                      <a href="#"
-                      >Wheel Simulators</a
-                      >
-                      <ul
-                              class="categorie_sub_menu"
-                      >
+                    <li class="menu_item_children last_child">
+                      <a href="#">Wheel Simulators</a>
+                      <ul class="categorie_sub_menu">
                         <li>
-                          <a href=""
-                          >Bags & Cases</a
-                          >
-                        </li>
+                          <a href="#">Bags & Cases</a></li>
                         <li>
-                          <a href=""
-                          >Binoculars &
-                            Scopes</a
-                          >
-                        </li>
+                          <a href="#">Binoculars & Scopes</a></li>
                         <li>
-                          <a href=""
-                          >Film
-                            Photography</a
-                          >
-                        </li>
+                          <a href="#">Film Photography</a></li>
                         <li>
-                          <a href=""
-                          >Lighting &
-                            Studio</a
-                          >
-                        </li>
+                          <a href="#">Lighting & Studio</a></li>
                       </ul>
                     </li>
                   </ul>
                 </li>
                 <li class="menu_item_children">
-                  <a href="#"
-                  ><span
-                  ><i
-                          class="zmdi zmdi-image"
-                  ></i
-                  ></span>
-                    Fashion & Beauty
-                    <i class="fa fa-angle-right"></i
-                    ></a>
-                  <ul
-                          class="categories_mega_menu column_3"
-                  >
+                  <a href="#"><span><i class="zmdi zmdi-image"></i></span> Fashion & Beauty <i
+                          class="fa fa-angle-right"></i></a>
+                  <ul class="categories_mega_menu column_3">
                     <li class="menu_item_children">
                       <a href="#">Chair</a>
-                      <div
-                              class="categorie_sub_menu"
-                      >
+                      <div class="categorie_sub_menu">
                         <ul>
                           <li>
-                            <a href=""
-                            >Dining
-                              room</a
-                            >
-                          </li>
+                            <a href="#">Dining room</a></li>
                           <li>
-                            <a href=""
-                            >bedroom</a
-                            >
-                          </li>
+                            <a href="#">bedroom</a></li>
                           <li>
-                            <a href="">
-                              Home &
-                              Office</a
-                            >
-                          </li>
+                            <a href="#"> Home & Office</a></li>
                           <li>
-                            <a href=""
-                            >living
-                              room</a
-                            >
-                          </li>
+                            <a href="#">living room</a></li>
                         </ul>
                       </div>
                     </li>
                     <li class="menu_item_children">
                       <a href="#">Lighting</a>
-                      <div
-                              class="categorie_sub_menu"
-                      >
+                      <div class="categorie_sub_menu">
                         <ul>
                           <li>
-                            <a href=""
-                            >Ceiling
-                              Lighting</a
-                            >
-                          </li>
+                            <a href="#">Ceiling Lighting</a></li>
                           <li>
-                            <a href=""
-                            >Wall
-                              Lighting</a
-                            >
-                          </li>
+                            <a href="#">Wall Lighting</a></li>
                           <li>
-                            <a href=""
-                            >Outdoor
-                              Lighting</a
-                            >
-                          </li>
+                            <a href="#">Outdoor Lighting</a></li>
                           <li>
-                            <a href=""
-                            >Smart
-                              Lighting</a
-                            >
-                          </li>
+                            <a href="#">Smart Lighting</a></li>
                         </ul>
                       </div>
                     </li>
                     <li class="menu_item_children">
                       <a href="#">Sofa</a>
-                      <div
-                              class="categorie_sub_menu"
-                      >
+                      <div class="categorie_sub_menu">
                         <ul>
                           <li>
-                            <a href=""
-                            >Fabric
-                              Sofas</a
-                            >
-                          </li>
+                            <a href="#">Fabric Sofas</a></li>
                           <li>
-                            <a href=""
-                            >Leather
-                              Sofas</a
-                            >
-                          </li>
+                            <a href="#">Leather Sofas</a></li>
                           <li>
-                            <a href=""
-                            >Corner
-                              Sofas</a
-                            >
-                          </li>
+                            <a href="#">Corner Sofas</a></li>
                           <li>
-                            <a href=""
-                            >Sofa
-                              Beds</a
-                            >
-                          </li>
+                            <a href="#">Sofa Beds</a></li>
                         </ul>
                       </div>
                     </li>
                   </ul>
                 </li>
                 <li class="menu_item_children">
-                  <a href="#"
-                  ><span
-                  ><i
-                          class="zmdi zmdi-camera"
-                  ></i
-                  ></span>
-                    Camera & Photo
-                    <i class="fa fa-angle-right"></i
-                    ></a>
-                  <ul
-                          class="categories_mega_menu column_2"
-                  >
+                  <a href="#"><span><i class="zmdi zmdi-camera"></i></span> Camera & Photo <i
+                          class="fa fa-angle-right"></i></a>
+                  <ul class="categories_mega_menu column_2">
                     <li class="menu_item_children">
                       <a href="#">Brake Tools</a>
-                      <div
-                              class="categorie_sub_menu"
-                      >
+                      <div class="categorie_sub_menu">
                         <ul>
                           <li>
-                            <a href=""
-                            >Driveshafts</a
-                            >
-                          </li>
+                            <a href="#">Driveshafts</a></li>
                           <li>
-                            <a href=""
-                            >Spools</a
-                            >
-                          </li>
+                            <a href="#">Spools</a></li>
                           <li>
-                            <a href=""
-                            >Diesel
-                            </a>
-                          </li>
+                            <a href="#">Diesel </a></li>
                           <li>
-                            <a href=""
-                            >Gasoline</a
-                            >
-                          </li>
+                            <a href="#">Gasoline</a></li>
                         </ul>
                       </div>
                     </li>
                     <li class="menu_item_children">
-                      <a href="#"
-                      >Emergency Brake</a
-                      >
-                      <div
-                              class="categorie_sub_menu"
-                      >
+                      <a href="#">Emergency Brake</a>
+                      <div class="categorie_sub_menu">
                         <ul>
                           <li>
-                            <a href=""
-                            >Dolls for
-                              Girls</a
-                            >
-                          </li>
+                            <a href="#">Dolls for Girls</a></li>
                           <li>
-                            <a href=""
-                            >Girls'
-                              Learning
-                              Toys</a
-                            >
-                          </li>
+                            <a href="#">Girls' Learning Toys</a></li>
                           <li>
-                            <a href=""
-                            >Arts and
-                              Crafts for
-                              Girls</a
-                            >
-                          </li>
+                            <a href="#">Arts and Crafts for Girls</a></li>
                           <li>
-                            <a href=""
-                            >Video Games
-                              for Girls</a
-                            >
-                          </li>
+                            <a href="#">Video Games for Girls</a></li>
                         </ul>
                       </div>
                     </li>
                   </ul>
                 </li>
                 <li class="menu_item_children">
-                  <a href="#"
-                  ><span
-                  ><i
-                          class="zmdi zmdi-dribbble"
-                  ></i
-                  ></span>
-                    Sport & Outdoor
-                    <i class="fa fa-angle-right"></i
-                    ></a>
-                  <ul
-                          class="categories_mega_menu column_2"
-                  >
+                  <a href="#"><span><i class="zmdi zmdi-dribbble"></i></span> Sport & Outdoor <i
+                          class="fa fa-angle-right"></i></a>
+                  <ul class="categories_mega_menu column_2">
                     <li class="menu_item_children">
-                      <a href="#"
-                      >Check Trousers</a
-                      >
-                      <div
-                              class="categorie_sub_menu"
-                      >
+                      <a href="#">Check Trousers</a>
+                      <div class="categorie_sub_menu">
                         <ul>
                           <li>
-                            <a href=""
-                            >Building</a
-                            >
-                          </li>
+                            <a href="#">Building</a></li>
                           <li>
-                            <a href=""
-                            >Electronics</a
-                            >
-                          </li>
+                            <a href="#">Electronics</a></li>
                           <li>
-                            <a href=""
-                            >action
-                              figures
-                            </a>
-                          </li>
+                            <a href="#">action figures </a></li>
                           <li>
-                            <a href=""
-                            >specialty &
-                              boutique
-                              toy</a
-                            >
-                          </li>
+                            <a href="#">specialty & boutique toy</a></li>
                         </ul>
                       </div>
                     </li>
                     <li class="menu_item_children">
                       <a href="#">Calculators</a>
-                      <div
-                              class="categorie_sub_menu"
-                      >
+                      <div class="categorie_sub_menu">
                         <ul>
                           <li>
-                            <a href=""
-                            >Dolls for
-                              Girls</a
-                            >
-                          </li>
+                            <a href="#">Dolls for Girls</a></li>
                           <li>
-                            <a href=""
-                            >Girls'
-                              Learning
-                              Toys</a
-                            >
-                          </li>
+                            <a href="#">Girls' Learning Toys</a></li>
                           <li>
-                            <a href=""
-                            >Arts and
-                              Crafts for
-                              Girls</a
-                            >
-                          </li>
+                            <a href="#">Arts and Crafts for Girls</a></li>
                           <li>
-                            <a href=""
-                            >Video Games
-                              for Girls</a
-                            >
-                          </li>
+                            <a href="#">Video Games for Girls</a></li>
                         </ul>
                       </div>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a href="#"
-                  ><span
-                  ><i class="zmdi zmdi-tv"></i
-                  ></span>
-                    TV & Audio</a
-                  >
+                  <a href="#"><span><i class="zmdi zmdi-tv"></i></span> TV & Audio</a>
                 </li>
                 <li>
-                  <a href="#"
-                  ><span
-                  ><i
-                          class="zmdi zmdi-tv-list"
-                  ></i
-                  ></span>
-                    home funiture</a
-                  >
+                  <a href="#"><span><i class="zmdi zmdi-tv-list"></i></span> home funiture</a>
                 </li>
                 <li>
-                  <a href="#"
-                  ><span
-                  ><i
-                          class="zmdi zmdi-cake"
-                  ></i
-                  ></span>
-                    toys for kids</a
-                  >
+                  <a href="#"><span><i class="zmdi zmdi-cake"></i></span> toys for kids</a>
                 </li>
                 <li>
-                  <a href="#"
-                  ><span
-                  ><i
-                          class="zmdi zmdi-memory"
-                  ></i
-                  ></span>
-                    Memory Cards</a
-                  >
+                  <a href="#"><span><i class="zmdi zmdi-memory"></i></span> Memory Cards</a>
                 </li>
                 <li>
-                  <a href="#"
-                  ><span
-                  ><i
-                          class="zmdi zmdi-case-download"
-                  ></i
-                  ></span>
-                    Living Room</a
-                  >
+                  <a href="#"><span><i class="zmdi zmdi-case-download"></i></span> Living Room</a>
                 </li>
                 <li class="hidden">
-                  <a href="shop-left-sidebar.html"
-                  >New Sofas</a
-                  >
+                  <a href="#">New Sofas</a>
                 </li>
                 <li class="hidden">
-                  <a href="shop-left-sidebar.html"
-                  >Sleight Sofas</a
-                  >
+                  <a href="#">Sleight Sofas</a>
                 </li>
                 <li>
-                  <a href="#" id="more-btn"
-                  ><i
-                          class="fa fa-plus"
-                          aria-hidden="true"
-                  ></i>
-                    More Categories</a
-                  >
+                  <a href="#" id="more-btn"><i class="fa fa-plus" aria-hidden="true"></i> More
+                    Categories</a>
                 </li>
               </ul>
             </div>
@@ -724,285 +359,85 @@
             <nav>
               <ul>
                 <li class="active">
-                  <a href="index.html"
-                  ><i class="zmdi zmdi-home"></i>
-                    home
-                    <i
-                            class="zmdi zmdi-caret-down"
-                    ></i
-                    ></a>
-                  <ul class="sub_menu">
-                    <li>
-                      <a href="index.html"
-                      >Home 1</a
-                      >
-                    </li>
-                    <li>
-                      <a href="index-2.html"
-                      >Home 2</a
-                      >
-                    </li>
-                    <li>
-                      <a href="index-3.html"
-                      >Home 3</a
-                      >
-                    </li>
-                    <li>
-                      <a href="index-4.html"
-                      >Home 4</a
-                      >
-                    </li>
-                    <li>
-                      <a href="index-5.html"
-                      >Home 5</a
-                      >
-                    </li>
-                    <li>
-                      <a href="index-6.html"
-                      >Home 6</a
-                      >
-                    </li>
-                    <li>
-                      <a href="index-7.html"
-                      >Home 7</a
-                      >
-                    </li>
-                    <li>
-                      <a href="index-8.html"
-                      >Home 8</a
-                      >
-                    </li>
-                  </ul>
+                  <a href="/"><i class="zmdi zmdi-home"></i> home</a>
                 </li>
                 <li class="mega_items">
-                  <a href="shop.html"
-                  ><i
-                          class="zmdi zmdi-shopping-basket"
-                  ></i>
-                    shop
-                    <i
-                            class="zmdi zmdi-caret-down"
-                    ></i
-                    ></a>
+                  <a href="shop.html"><i class="zmdi zmdi-shopping-basket"></i> shop <i
+                          class="zmdi zmdi-caret-down"></i></a>
                   <div class="mega_menu">
                     <ul class="mega_menu_inner">
                       <li>
-                        <a href="#"
-                        >Shop Layouts</a
-                        >
+                        <a href="#">Shop Layouts</a>
                         <ul>
-                          <li>
-                            <a
-                                    href="shop-fullwidth.html"
-                            >Full
-                              Width</a
-                            >
+                          <li><a href="#">Full Width</a></li>
+                          <li><a href="#">Full Width list</a></li>
+                          <li><a href="#">Right Sidebar </a></li>
+                          <li><a href="#"> Right Sidebar list</a>
                           </li>
-                          <li>
-                            <a
-                                    href="shop-fullwidth-list.html"
-                            >Full Width
-                              list</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                                    href="shop-right-sidebar.html"
-                            >Right
-                              Sidebar
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                                    href="shop-right-sidebar-list.html"
-                            >
-                              Right
-                              Sidebar
-                              list</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                                    href="shop-list.html"
-                            >List
-                              View</a
-                            >
-                          </li>
+                          <li><a href="/product/list">List View</a></li>
                         </ul>
                       </li>
                       <li>
-                        <a href="#"
-                        >other Pages</a
-                        >
+                        <a href="#">other Pages</a>
                         <ul>
-                          <li>
-                            <a
-                                    href="cart.html"
-                            >cart</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                                    href="wishlist.html"
-                            >Wishlist</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                                    href="checkout.html"
-                            >Checkout</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                                    href="my-account.html"
-                            >my
-                              account</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                                    href="404.html"
-                            >Error
-                              404</a
-                            >
-                          </li>
+                          <li><a href="cart.html">cart</a></li>
+                          <li><a href="wishlist.html">Wishlist</a></li>
+                          <li><a href="checkout.html">Checkout</a></li>
+                          <li><a href="my-account.html">my account</a></li>
+                          <li><a href="404.html">Error 404</a></li>
                         </ul>
                       </li>
                       <li>
-                        <a href="#"
-                        >Product Types</a
-                        >
+                        <a href="#">Product Types</a>
                         <ul>
-                          <li>
-                            <a
-                                    href="product-details.html"
-                            >product
-                              details</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                                    href="product-sidebar.html"
-                            >product
-                              sidebar</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                                    href="product-grouped.html"
-                            >product
-                              grouped</a
-                            >
-                          </li>
-                          <li>
-                            <a
-                                    href="variable-product.html"
-                            >product
-                              variable</a
-                            >
-                          </li>
+                          <li><a href="product-details.html">product details</a></li>
+                          <li><a href="product-sidebar.html">product sidebar</a></li>
+                          <li><a href="product-grouped.html">product grouped</a></li>
+                          <li><a href="variable-product.html">product variable</a></li>
                         </ul>
                       </li>
                     </ul>
                   </div>
                 </li>
                 <li>
-                  <a href="blog.html"
-                  ><i
-                          class="zmdi zmdi-collection-music"
-                  ></i>
-                    blog
-                    <i
-                            class="zmdi zmdi-caret-down"
-                    ></i
-                    ></a>
+                  <a href="blog.html"><i class="zmdi zmdi-collection-music"></i> blog <i
+                          class="zmdi zmdi-caret-down"></i></a>
                   <ul class="sub_menu pages">
                     <li>
-                      <a href="blog-details.html"
-                      >blog details</a
-                      >
-                    </li>
+                      <a href="blog-details.html">blog details</a></li>
+                    <li><a href="blog-fullwidth.html">blog fullwidth</a></li>
                     <li>
-                      <a
-                              href="blog-fullwidth.html"
-                      >blog fullwidth</a
-                      >
-                    </li>
-                    <li>
-                      <a href="blog-sidebar.html"
-                      >blog sidebar</a
-                      >
-                    </li>
+                      <a href="blog-sidebar.html">blog sidebar</a></li>
                   </ul>
                 </li>
                 <li>
-                  <a href="#"
-                  ><i class="zmdi zmdi-star"></i>
-                    pages
-                    <i
-                            class="zmdi zmdi-caret-down"
-                    ></i
-                    ></a>
+                  <a href="#"><i class="zmdi zmdi-star"></i> pages <i
+                          class="zmdi zmdi-caret-down"></i></a>
                   <ul class="sub_menu pages">
                     <li>
-                      <a href="about.html"
-                      >About Us</a
-                      >
-                    </li>
+                      <a href="about.html">About Us</a></li>
                     <li>
-                      <a href="services.html"
-                      >services</a
-                      >
-                    </li>
+                      <a href="services.html">services</a></li>
                     <li>
-                      <a href="portfolio.html"
-                      >portfolio</a
-                      >
-                    </li>
+                      <a href="portfolio.html">portfolio</a></li>
                     <li>
-                      <a href="faq.html"
-                      >Frequently Questions</a
-                      >
-                    </li>
+                      <a href="faq.html">Frequently Questions</a></li>
                     <li>
-                      <a href="contact.html"
-                      >contact</a
-                      >
-                    </li>
+                      <a href="contact.html">contact</a></li>
                     <li>
-                      <a href="login.html"
-                      >login</a
-                      >
-                    </li>
+                      <a href="login.html">login</a></li>
                     <li>
-                      <a href="wishlist.html"
-                      >Wishlist</a
-                      >
-                    </li>
+                      <a href="wishlist.html">Wishlist</a></li>
                     <li>
-                      <a href="404.html"
-                      >Error 404</a
-                      >
-                    </li>
+                      <a href="404.html">Error 404</a></li>
                   </ul>
                 </li>
 
                 <li>
-                  <a href="about.html"
-                  ><i
-                          class="zmdi zmdi-comments"
-                  ></i>
-                    about Us</a
-                  >
+                  <a href="about.html"><i class="zmdi zmdi-comments"></i> about Us</a>
                 </li>
                 <li>
-                  <a href="contact.html"
-                  ><i
-                          class="zmdi zmdi-account-box-mail"
-                  ></i>
-                    Contact Us</a
-                  >
+                  <a href="contact.html"><i class="zmdi zmdi-account-box-mail"></i> Contact Us</a>
                 </li>
               </ul>
             </nav>
@@ -1024,12 +459,14 @@
       <div class="col-12">
         <div class="canvas_open">
           <span>MENU</span>
+
           <a href="javascript:void(0)"
           ><i class="ion-navicon"></i
           ></a>
         </div>
         <div class="Offcanvas_menu_wrapper">
           <div class="canvas_close">
+
             <a href="javascript:void(0)"
             ><i class="ion-android-close"></i
             ></a>
@@ -1041,63 +478,41 @@
           <div class="top_right">
             <ul>
               <li class="currency">
-                <a href="#"
-                ><i class="fa fa-dollar"></i> US
-                  Dollar
-                  <i class="zmdi zmdi-caret-down"></i
-                  ></a>
+
+                <a href="#"><i class="fa fa-dollar"></i> US Dollar <i class="zmdi zmdi-caret-down"></i></a>
                 <ul class="dropdown_currency">
-                  <li><a href="#">EUR – Euro</a></li>
                   <li>
-                    <a href="#"
-                    >GBP – British Pound</a
-                    >
-                  </li>
+                    <a href="#">EUR – Euro</a></li>
                   <li>
-                    <a href="#"
-                    >INR – India Rupee</a
-                    >
-                  </li>
+                    <a href="#">GBP – British Pound</a></li>
+                  <li>
+                    <a href="#">INR – India Rupee</a></li>
                 </ul>
               </li>
               <li class="language">
-                <a href="#"
-                ><i class="zmdi zmdi-dribbble"></i>
-                  English1
-                  <i class="zmdi zmdi-caret-down"></i
-                  ></a>
+
+                <a href="#"><i class="zmdi zmdi-dribbble"></i> English1 <i
+                        class="zmdi zmdi-caret-down"></i></a>
                 <ul class="dropdown_language">
-                  <li><a href="#">English</a></li>
-                  <li><a href="#">Germany</a></li>
+                  <li>
+                    <a href="#">English</a></li>
+                  <li>
+                    <a href="#">Germany</a></li>
                 </ul>
               </li>
               <li class="top_links">
-                <a href="#"
-                ><i class="zmdi zmdi-account"></i>
-                  My account
-                  <i class="zmdi zmdi-caret-down"></i
-                  ></a>
+
+                <a href="#"><i class="zmdi zmdi-account"></i> My account <i
+                        class="zmdi zmdi-caret-down"></i></a>
                 <ul class="dropdown_links">
                   <li>
-                    <a href="checkout.html"
-                    >Checkout
-                    </a>
-                  </li>
+                    <a href="checkout.html">Checkout </a></li>
                   <li>
-                    <a href="my-account.html"
-                    >My Account
-                    </a>
-                  </li>
+                    <a href="my-account.html">My Account </a></li>
                   <li>
-                    <a href="cart.html"
-                    >Shopping Cart</a
-                    >
-                  </li>
+                    <a href="cart.html">Shopping Cart</a></li>
                   <li>
-                    <a href="wishlist.html"
-                    >Wishlist</a
-                    >
-                  </li>
+                    <a href="wishlist.html">Wishlist</a></li>
                 </ul>
               </li>
             </ul>
@@ -1105,61 +520,35 @@
           <div class="search-container">
             <form action="#">
               <div class="hover_category">
-                <select
-                        class="select_option"
-                        name="select"
-                        id="categori2"
-                >
-                  <option selected value="1">
-                    All Categories
-                  </option>
-                  <option value="2">
-                    Accessories
-                  </option>
-                  <option value="3">
-                    Accessories & More
-                  </option>
-                  <option value="4">
-                    Butters & Eggs
-                  </option>
-                  <option value="5">
-                    Camera & Video
-                  </option>
+                <select class="select_option" name="select" id="categori2">
+                  <option selected value="1"> All Categories</option>
+                  <option value="2"> Accessories</option>
+                  <option value="3"> Accessories & More</option>
+                  <option value="4"> Butters & Eggs</option>
+                  <option value="5"> Camera & Video</option>
                   <option value="6">Mornitors</option>
                   <option value="7">Tablets</option>
                   <option value="8">Laptops</option>
                   <option value="9">Handbags</option>
-                  <option value="10">
-                    Headphone & Speaker
-                  </option>
-                  <option value="11">
-                    Herbs & botanicals
-                  </option>
-                  <option value="12">
-                    Vegetables
-                  </option>
+                  <option value="10"> Headphone & Speaker</option>
+                  <option value="11"> Herbs & botanicals</option>
+                  <option value="12"> Vegetables</option>
                   <option value="13">Shop</option>
-                  <option value="14">
-                    Laptops & Desktops
-                  </option>
+                  <option value="14"> Laptops & Desktops</option>
                   <option value="15">Watchs</option>
-                  <option value="16">
-                    Electronic
-                  </option>
+                  <option value="16"> Electronic</option>
                 </select>
               </div>
               <div class="search_box">
-                <input
-                        placeholder="Search product..."
-                        type="text"
+                <input placeholder="Search product..." type="text"
                 />
-                <button type="submit">
-                  <i class="zmdi zmdi-search"></i>
+                <button type="submit"><i class="zmdi zmdi-search"></i>
                 </button>
               </div>
             </form>
           </div>
           <div class="mini_cart_wrapper">
+
             <a href="javascript:void(0)"
             ><i class="zmdi zmdi-shopping-basket"></i>
               <span>2items - $213.00</span>
@@ -1168,55 +557,33 @@
             <div class="mini_cart">
               <div class="cart_item">
                 <div class="cart_img">
-                  <a href="#"
-                  ><img
-                          src="client/img/s-product/product.jpg"
-                          alt=""
-                  /></a>
+
+                  <a href="#">
+                    <img src="client/img/s-product/product.jpg" alt=""/>
+                  </a>
                 </div>
                 <div class="cart_info">
                   <a href="#">Condimentum Watches</a>
-
-                  <span class="quantity">Qty: 1</span>
-                  <span class="price_cart"
-                  >$60.00</span
-                  >
+                  <span class="quantity">Qty: 1</span> <span class="price_cart">$60.00</span>
                 </div>
                 <div class="cart_remove">
-                  <a href="#"
-                  ><i
-                          class="ion-android-close"
-                  ></i
-                  ></a>
+                  <a href="#"><i class="ion-android-close"></i></a>
                 </div>
               </div>
               <div class="cart_item">
                 <div class="cart_img">
-                  <a href="#"
-                  ><img
-                          src="client/img/s-product/product2.jpg"
-                          alt=""
-                  /></a>
+                  <a href="#"><img src="client/img/s-product/product2.jpg" alt=""/></a>
                 </div>
                 <div class="cart_info">
-                  <a href="#">Officiis debitis</a>
-                  <span class="quantity">Qty: 1</span>
-                  <span class="price_cart"
-                  >$69.00</span
-                  >
+                  <a href="#">Officiis debitis</a> <span class="quantity">Qty: 1</span> <span
+                        class="price_cart">$69.00</span>
                 </div>
                 <div class="cart_remove">
-                  <a href="#"
-                  ><i
-                          class="ion-android-close"
-                  ></i
-                  ></a>
+                  <a href="#"><i class="ion-android-close"></i></a>
                 </div>
               </div>
               <div class="mini_cart_table">
-                <div class="cart_total">
-                  <span>Subtotal:</span>
-                  <span class="price">$138.00</span>
+                <div class="cart_total"><span>Subtotal:</span> <span class="price">$138.00</span>
                 </div>
               </div>
 
@@ -1232,257 +599,135 @@
           <div id="menu" class="text-left">
             <ul class="offcanvas_main_menu">
               <li class="menu-item-has-children active">
+
                 <a href="#">Home</a>
-                <ul class="sub-menu">
-                  <li>
-                    <a href="index.html">Home 1</a>
-                  </li>
-                  <li>
-                    <a href="index-2.html"
-                    >Home 2</a
-                    >
-                  </li>
-                  <li>
-                    <a href="index-3.html"
-                    >Home 3</a
-                    >
-                  </li>
-                  <li>
-                    <a href="index-4.html"
-                    >Home 4</a
-                    >
-                  </li>
-                  <li>
-                    <a href="index-5.html"
-                    >Home 5</a
-                    >
-                  </li>
-                  <li>
-                    <a href="index-6.html"
-                    >Home 6</a
-                    >
-                  </li>
-                  <li>
-                    <a href="index-7.html"
-                    >Home 7</a
-                    >
-                  </li>
-                  <li>
-                    <a href="index-8.html"
-                    >Home 8</a
-                    >
-                  </li>
-                </ul>
+
               </li>
               <li class="menu-item-has-children">
+
                 <a href="#">Shop</a>
                 <ul class="sub-menu">
                   <li class="menu-item-has-children">
                     <a href="#">Shop Layouts</a>
                     <ul class="sub-menu">
                       <li>
-                        <a
-                                href="shop-fullwidth.html"
-                        >Full Width</a
-                        >
-                      </li>
+                        <a href ="/product/list">Full Width</a>     </li>
                       <li>
-                        <a
-                                href="shop-fullwidth-list.html"
-                        >Full Width list</a
-                        >
-                      </li>
+                        <a href ="/product/list">Full Width list</a>     </li>
                       <li>
-                        <a
-                                href="shop-right-sidebar.html"
-                        >Right Sidebar
-                        </a>
-                      </li>
+                        <a href ="/product/list">Right Sidebar       </a>     </li>
                       <li>
-                        <a
-                                href="shop-right-sidebar-list.html"
-                        >
-                          Right Sidebar
-                          list</a
-                        >
-                      </li>
+                        <a href ="/product/list"> Right Sidebar list</a>     </li>
                       <li>
-                        <a href="shop-list.html"
-                        >List View</a
-                        >
-                      </li>
+                        <a href="/product/list">List View</a></li>
                     </ul>
                   </li>
                   <li class="menu-item-has-children">
                     <a href="#">other Pages</a>
                     <ul class="sub-menu">
                       <li>
-                        <a href="cart.html"
-                        >cart</a
-                        >
-                      </li>
+                        <a href="#">cart</a></li>
                       <li>
-                        <a href="wishlist.html"
-                        >Wishlist</a
-                        >
-                      </li>
+                        <a href="#">Wishlist</a></li>
                       <li>
-                        <a href="checkout.html"
-                        >Checkout</a
-                        >
-                      </li>
+                        <a href="#">Checkout</a></li>
                       <li>
-                        <a
-                                href="my-account.html"
-                        >my account</a
-                        >
-                      </li>
+                        <a href ="#">my account</a>     </li>
                       <li>
-                        <a href="404.html"
-                        >Error 404</a
-                        >
-                      </li>
+                        <a href="#">Error 404</a></li>
                     </ul>
                   </li>
                   <li class="menu-item-has-children">
                     <a href="#">Product Types</a>
                     <ul class="sub-menu">
                       <li>
-                        <a
-                                href="product-details.html"
-                        >product details</a
-                        >
-                      </li>
+                        <a href ="#">product details</a>     </li>
                       <li>
-                        <a
-                                href="product-sidebar.html"
-                        >product sidebar</a
-                        >
-                      </li>
+                        <a href ="#">product sidebar</a>     </li>
                       <li>
-                        <a
-                                href="product-grouped.html"
-                        >product grouped</a
-                        >
-                      </li>
+                        <a href ="#">product grouped</a>     </li>
                       <li>
-                        <a
-                                href="variable-product.html"
-                        >product variable</a
-                        >
-                      </li>
+                        <a href ="#">product variable</a>     </li>
                     </ul>
                   </li>
                 </ul>
               </li>
               <li class="menu-item-has-children">
+
                 <a href="#">blog</a>
                 <ul class="sub-menu">
                   <li>
-                    <a href="blog.html">blog</a>
-                  </li>
+                    <a href="#">blog</a></li>
                   <li>
-                    <a href="blog-details.html"
-                    >blog details</a
-                    >
-                  </li>
+                    <a href="#">blog details</a></li>
                   <li>
-                    <a href="blog-fullwidth.html"
-                    >blog fullwidth</a
-                    >
-                  </li>
+                    <a href="#">blog fullwidth</a></li>
                   <li>
-                    <a href="blog-sidebar.html"
-                    >blog sidebar</a
-                    >
-                  </li>
+                    <a href="#">blog sidebar</a></li>
                 </ul>
               </li>
               <li class="menu-item-has-children">
+
                 <a href="#">pages </a>
                 <ul class="sub-menu">
                   <li>
-                    <a href="about.html"
-                    >About Us</a
-                    >
-                  </li>
+                    <a href="#">About Us</a></li>
                   <li>
-                    <a href="services.html"
-                    >services</a
-                    >
-                  </li>
+                    <a href="#l">services</a></li>
                   <li>
-                    <a href="portfolio.html"
-                    >portfolio</a
-                    >
-                  </li>
+                    <a href="#l">portfolio</a></li>
                   <li>
-                    <a href="faq.html"
-                    >Frequently Questions</a
-                    >
-                  </li>
+                    <a href="#">Frequently Questions</a></li>
                   <li>
-                    <a href="contact.html"
-                    >contact</a
-                    >
-                  </li>
+                    <a href="#">contact</a></li>
                   <li>
-                    <a href="login.html">login</a>
-                  </li>
+                    <a href="#">login</a></li>
                   <li>
-                    <a href="wishlist.html"
-                    >Wishlist</a
-                    >
-                  </li>
+                    <a href="#">Wishlist</a></li>
                   <li>
-                    <a href="404.html">Error 404</a>
-                  </li>
+                    <a href="#">Error 404</a></li>
                 </ul>
               </li>
               <li class="menu-item-has-children">
-                <a href="my-account.html">my account</a>
+
+                <a href="#">my account</a>
               </li>
               <li class="menu-item-has-children">
-                <a href="about.html">about Us</a>
+
+                <a href="#">about Us</a>
               </li>
               <li class="menu-item-has-children">
-                <a href="contact.html"> Contact Us</a>
+
+                <a href="#"> Contact Us</a>
               </li>
             </ul>
           </div>
 
           <div class="Offcanvas_footer">
-                                <span
-                                ><a href="#"
-                                ><i class="fa fa-envelope-o"></i>
-                                        info@yourdomain.com</a
-                                ></span
-                                >
+            <span>
+
+<a href="#"><i class="fa fa-envelope-o"></i>info@yourdomain.com</a>
+            </span>
             <ul>
               <li class="facebook">
-                <a href="#"
-                ><i class="fa fa-facebook"></i
-                ></a>
+
+                <a href="#"><i class="fa fa-facebook"></i></a>
               </li>
               <li class="twitter">
-                <a href="#"
-                ><i class="fa fa-twitter"></i
-                ></a>
+
+                <a href="#"><i class="fa fa-twitter"></i></a>
               </li>
               <li class="pinterest">
-                <a href="#"
-                ><i class="fa fa-pinterest-p"></i
-                ></a>
+
+                <a href="#"><i class="fa fa-pinterest-p"></i></a>
               </li>
               <li class="google-plus">
-                <a href="#"
-                ><i class="fa fa-google-plus"></i
-                ></a>
+
+                <a href="#"><i class="fa fa-google-plus"></i></a>
               </li>
               <li class="linkedin">
-                <a href="#"
-                ><i class="fa fa-linkedin"></i
-                ></a>
+
+                <a href="#"><i class="fa fa-linkedin"></i></a>
               </li>
             </ul>
           </div>
@@ -1499,40 +744,31 @@
     <div class="row">
       <div class="col-lg-9 offset-lg-3">
         <div class="slider_area slider_two owl-carousel">
-          <div
-                  class="single_slider d-flex align-items-center"
-                  data-bgimg="client/img/slider/slider3.jpg"
+          <div class="single_slider d-flex align-items-center" data-bgimg="client/img/slider/slider3.jpg"
           >
-            <div
-                    class="slider_content slider_content_two content_position_center"
+            <div class="slider_content slider_content_two content_position_center"
             >
               <h1>The NX-80</h1>
               <span
-              >High-Fidelity Sound that takes <br />
-                                        your breath away
-                                    </span>
+              >High-Fidelity Sound that takes <br/>                       your breath away                   </span>
               <h2>
                 <span>form</span> $99 <span>00</span>
               </h2>
-              <a href="shop.html">shop now</a>
+
+              <a href="#">shop now</a>
             </div>
           </div>
-          <div
-                  class="single_slider d-flex align-items-center"
-                  data-bgimg="client/img/slider/slider4.jpg"
+          <div class="single_slider d-flex align-items-center" data-bgimg="client/img/slider/slider4.jpg"
           >
-            <div
-                    class="slider_content slider_content_two content_position_left"
+            <div class="slider_content slider_content_two content_position_left"
             >
               <h1>The NX-80</h1>
               <span
-              >High-Fidelity Sound that takes <br />
-                                        your breath away
-                                    </span>
+              >High-Fidelity Sound that takes <br/>                       your breath away                   </span>
               <h2>
                 <span>form</span> $99 <span>00</span>
               </h2>
-              <a href="shop.html">shop now</a>
+              <a href="#">shop now</a>
             </div>
           </div>
         </div>
@@ -1548,56 +784,39 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <div
-                class="category_product_carousel category_column4 owl-carousel"
-        >
+        <div class="category_product_carousel category_column4 owl-carousel">
           <div class="single_category_product">
             <div class="category_product_thumb">
-              <a href="shop.html"
-              ><img src="client/img/category/category1.jpg"
-                    alt=""
-              /></a>
+              <a href="shop.html"><img src="client/img/category/category1.jpg" alt=""/></a>
             </div>
             <div class="category_product_name">
-              <h2><a href="shop.html">Màn hình</a></h2>
+              <h2>
+                <a href="shop.html">Màn hình</a></h2>
             </div>
           </div>
           <div class="single_category_product">
             <div class="category_product_thumb">
-              <a href="shop.html"
-              ><img src="client/img/category/category2.jpg"
-                    alt=""
-              /></a>
+              <a href="shop.html"><img src="client/img/category/category2.jpg" alt=""/></a>
             </div>
             <div class="category_product_name">
               <h2>
-                <a href="shop.html"
-                >PC giả lập ảo hoá</a
-                >
+                <a href="shop.html">PC giả lập ảo hoá</a>
               </h2>
             </div>
           </div>
           <div class="single_category_product">
             <div class="category_product_thumb">
-              <a href="shop.html"
-              ><img src="client/img/category/category3.jpg"
-                    alt=""
-              /></a>
+              <a href="shop.html"><img src="client/img/category/category3.jpg" alt=""/></a>
             </div>
             <div class="category_product_name">
               <h2>
-                <a href="shop.html"
-                >máy tính văn phòng</a
-                >
+                <a href="shop.html">máy tính văn phòng</a>
               </h2>
             </div>
           </div>
           <div class="single_category_product">
             <div class="category_product_thumb">
-              <a href="shop.html"
-              ><img src="client/img/category/category4.jpg"
-                    alt=""
-              /></a>
+              <a href="shop.html"><img src="client/img/category/category4.jpg" alt=""/></a>
             </div>
             <div class="category_product_name">
               <h2>
@@ -1607,31 +826,21 @@
           </div>
           <div class="single_category_product">
             <div class="category_product_thumb">
-              <a href="shop.html"
-              ><img src="client/img/category/category5.jpg"
-                    alt=""
-              /></a>
+              <a href="shop.html"><img src="client/img/category/category5.jpg" alt=""/></a>
             </div>
             <div class="category_product_name">
               <h2>
-                <a href="shop.html"
-                >Tư vấn build PC theo yêu cầu</a
-                >
+                <a href="shop.html">Tư vấn build PC theo yêu cầu</a>
               </h2>
             </div>
           </div>
           <div class="single_category_product">
             <div class="category_product_thumb">
-              <a href="shop.html"
-              ><img src="client/img/category/category2.jpg"
-                    alt=""
-              /></a>
+              <a href="shop.html"><img src="client/img/category/category2.jpg" alt=""/></a>
             </div>
             <div class="category_product_name">
               <h2>
-                <a href="shop.html"
-                >PC WORKSTATION 3D RENDER</a
-                >
+                <a href="shop.html">PC WORKSTATION 3D RENDER</a>
               </h2>
             </div>
           </div>

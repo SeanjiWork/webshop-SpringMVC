@@ -20,40 +20,38 @@
 ========================= -->
 
     <!-- Plugins CSS -->
-    <link rel="stylesheet" href="/client/css/plugins.css" />
+    <link rel="stylesheet" href="client/css/plugins.css" />
 
     <!-- Main Style CSS -->
-    <link rel="stylesheet" href="/client/css/style.css" />
+    <link rel="stylesheet" href="client/css/style.css" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/client/css/custom_style.css" />
+    <link rel="stylesheet" href="client/css/custom_style.css" />
 </head>
 <body>
 <%--Header--%>
 <jsp:include page="../layout/header.jsp" />
 
-
 <%--Content - Flash-sale --%>
-<jsp:include page="../product/flash-sale.jsp" />
+<jsp:include page="../product-list/flash-sale.jsp" />
 
 <%-- Content - Product-list 1  (Top san pham ban chay)--%>
-<jsp:include page="../product/product-list1.jsp" />
+<jsp:include page="../product-list/product-list1.jsp" />
 
 <%--Content - Product-list 2 (PC Gaming hieu nang cao)--%>
-<jsp:include page="../product/product-list2.jsp" />
+<jsp:include page="../product-list/product-list2.jsp" />
 
 <%--Content - Product-list3 (PC Workstation - 3D Render)--%>
-<jsp:include page="../product/product-list3.jsp" />
+<jsp:include page="../product-list/product-list3.jsp" />
 
 <%--Content - Product-list4 (Linh kien may tinh)--%>
-<jsp:include page="../product/product-list4.jsp" />
+<jsp:include page="../product-list/product-list4.jsp" />
 
-<%--Content - product-list5 (Other)--%>
-<jsp:include page="../product/product-list5.jsp" />
-
+<%--Content - Product-list5 (Other)--%>
+<jsp:include page="../product-list/product-list5.jsp" />
 
 <%--Footer--%>
-<jsp:include page="../layout/footer.jsp" />
+<jsp:include page="../layout/footer.jsp"/>
 
 
 <!-- JS

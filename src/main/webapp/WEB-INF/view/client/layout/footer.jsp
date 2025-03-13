@@ -9,46 +9,25 @@
       <div class="col-12">
         <div class="brand_container owl-carousel">
           <div class="single_brand">
-            <a href="#"
-            ><img src="client/img/brand/brand.png"
-                    alt=""
-            /></a>
+            <a href="#"><img src="/client/img/brand/brand.png" alt="" /></a>
           </div>
           <div class="single_brand">
-            <a href="#"
-            ><img src="client/img/brand/brand1.png"
-                    alt=""
-            /></a>
+            <a href="#"><img src="/client/img/brand/brand1.png" alt="" /></a>
           </div>
           <div class="single_brand">
-            <a href="#"
-            ><img src="client/img/brand/brand2.png"
-                    alt=""
-            /></a>
+            <a href="#"><img src="/client/img/brand/brand2.png" alt="" /></a>
           </div>
           <div class="single_brand">
-            <a href="#"
-            ><img src="client/img/brand/brand3.png"
-                    alt=""
-            /></a>
+            <a href="#"><img src="/client/img/brand/brand3.png" alt="" /></a>
           </div>
           <div class="single_brand">
-            <a href="#"
-            ><img src="client/img/brand/brand4.png"
-                    alt=""
-            /></a>
+            <a href="#"><img src="/client/img/brand/brand4.png" alt="" /></a>
           </div>
           <div class="single_brand">
-            <a href="#"
-            ><img src="client/img/brand/brand5.png"
-                    alt=""
-            /></a>
+            <a href="#"><img src="/client/img/brand/brand5.png" alt="" /></a>
           </div>
           <div class="single_brand">
-            <a href="#"
-            ><img src="client/img/brand/brand1.png"
-                    alt=""
-            /></a>
+            <a href="#"><img src="/client/img/brand/brand1.png" alt="" /></a>
           </div>
         </div>
         <div class="newsletter_inner">
@@ -78,27 +57,23 @@
         <div class="col-lg-4 col-md-5">
           <div class="widgets_container contact_us">
             <a href="index.html"
-            ><img src="client/img/logo/logo.png" alt=""
+            ><img src="/client/img/logo/logo.png" alt=""
             /></a>
             <div class="footer_contact">
               <ul>
                 <li>
-                  <i class="zmdi zmdi-home"></i
-                  ><span>Addresss:</span> 2 Fauconberg
+                  <i class="zmdi zmdi-home"></i><span>Addresss:</span> 2 Fauconberg
                   Rd,Chiswick, London
                 </li>
                 <li>
-                  <i
-                          class="zmdi zmdi-phone-setting"
-                  ></i
-                  ><span>Phone:</span
-                ><a href="tel:(+1) 866-540-3229"
-                >(+1) 866-540-3229</a
-                >
+                  <i class="zmdi zmdi-phone-setting"
+                  ></i><span>Phone:</span>
+                  <a href="tel:(+1) 866-540-3229">
+                  (+1) 866-540-3229
+                </a>
                 </li>
                 <li>
-                  <i class="zmdi zmdi-email"></i
-                  ><span>Email:</span>
+                  <i class="zmdi zmdi-email"></i><span>Email:</span>
                   info@plazathemes.com
                 </li>
               </ul>
@@ -107,8 +82,7 @@
               <ul>
                 <li class="share">
                   <a href="#" title="rss"
-                  ><i class="fa fa-share-alt"></i
-                  ></a>
+                  ><i class="fa fa-share-alt"></i></a>
                   <div class="social_title">
                     <p>Subscribe</p>
                     <h3>Rss Feed</h3>
@@ -116,8 +90,7 @@
                 </li>
                 <li class="twitter">
                   <a href="#" title="twitter"
-                  ><i class="fa fa-twitter"></i
-                  ></a>
+                  ><i class="fa fa-twitter"></i></a>
                   <div class="social_title">
                     <p>Follow Us</p>
                     <h3>Twitter</h3>
@@ -125,8 +98,7 @@
                 </li>
                 <li class="facebook">
                   <a href="#" title="facebook"
-                  ><i class="fa fa-facebook"></i
-                  ></a>
+                  ><i class="fa fa-facebook"></i></a>
                   <div class="social_title">
                     <p>Find Us</p>
                     <h3>Facebook</h3>
@@ -134,10 +106,8 @@
                 </li>
                 <li class="google_plus">
                   <a href="#" title="google"
-                  ><i
-                          class="fa fa-google-plus"
-                  ></i
-                  ></a>
+                  ><i class="fa fa-google-plus"
+                  ></i></a>
                   <div class="social_title">
                     <p>Find Us</p>
                     <h3>Google+</h3>
@@ -156,27 +126,21 @@
                   <ul>
                     <li>
                       <a href="#"
-                      >Shipping & Returns</a
-                      >
+                      >Shipping & Returns</a>
                     </li>
                     <li>
-                      <a href="#">
-                        Secure Shopping</a
-                      >
+                      <a href="#"> Secure Shopping</a>
                     </li>
                     <li>
                       <a href="#"
                       >International
-                        Shipping</a
-                      >
+                        Shipping</a>
                     </li>
                     <li>
                       <a href="#"> Affiliates</a>
                     </li>
                     <li>
-                      <a href="contact.html">
-                        Contact</a
-                      >
+                      <a href="contact.html"> Contact</a>
                     </li>
                     <li><a href="#"> Travel</a></li>
                     <li>
@@ -196,18 +160,15 @@
                   <ul>
                     <li>
                       <a href="about.html"
-                      >About Us</a
-                      >
+                      >About Us</a>
                     </li>
                     <li>
                       <a href="#"
-                      >Delivery infomation</a
-                      >
+                      >Delivery infomation</a>
                     </li>
                     <li>
                       <a href="#"
-                      >Privacy Policy</a
-                      >
+                      >Privacy Policy</a>
                     </li>
                     <li><a href="#"> Travel</a></li>
                     <li>
@@ -220,9 +181,7 @@
                       <a href="#">Conditions</a>
                     </li>
                     <li>
-                      <a href="#">
-                        Frequently Questions</a
-                      >
+                      <a href="#"> Frequently Questions</a>
                     </li>
                   </ul>
                 </div>
@@ -237,9 +196,7 @@
               <div class="single_Latest_Posts">
                 <div class="Latest_Posts_thumb">
                   <a href="blog-details.html"
-                  ><img src="client/img/category/post1.jpg"
-                          alt=""
-                  /></a>
+                  ><img src="/client/img/category/post1.jpg" alt="" /></a>
                 </div>
                 <div class="Latest_Posts_content">
                   <h3>
@@ -248,19 +205,15 @@
                     >
                   </h3>
                   <span
-                  ><i
-                          class="zmdi zmdi-card-sd"
-                  ></i>
-                                                10 August, 2021</span
+                  ><i class="zmdi zmdi-card-sd"
+                  ></i>                         10 August, 2021</span
                   >
                 </div>
               </div>
               <div class="single_Latest_Posts">
                 <div class="Latest_Posts_thumb">
                   <a href="blog-details.html"
-                  ><img src="client/img/category/post2.jpg"
-                          alt=""
-                  /></a>
+                  ><img src="/client/img/category/post2.jpg" alt="" /></a>
                 </div>
                 <div class="Latest_Posts_content">
                   <h3>
@@ -269,19 +222,15 @@
                     >
                   </h3>
                   <span
-                  ><i
-                          class="zmdi zmdi-card-sd"
-                  ></i>
-                                                10 August, 2021</span
+                  ><i class="zmdi zmdi-card-sd"
+                  ></i>                         10 August, 2021</span
                   >
                 </div>
               </div>
               <div class="single_Latest_Posts">
                 <div class="Latest_Posts_thumb">
                   <a href="blog-details.html"
-                  ><img src="client/img/category/post3.jpg"
-                          alt=""
-                  /></a>
+                  ><img src="/client/img/category/post3.jpg" alt="" /></a>
                 </div>
                 <div class="Latest_Posts_content">
                   <h3>
@@ -290,10 +239,8 @@
                     >
                   </h3>
                   <span
-                  ><i
-                          class="zmdi zmdi-card-sd"
-                  ></i>
-                                                10 August, 2021</span
+                  ><i class="zmdi zmdi-card-sd"
+                  ></i>                         10 August, 2021</span
                   >
                 </div>
               </div>
@@ -350,8 +297,7 @@
         <div class="col-lg-6 col-md-5">
           <div class="footer_payment text-right">
             <p>
-              <img src="client/img/icon/payment.png"
-                      alt=""
+              <img src="/client/img/icon/payment.png" alt=""
               />
             </p>
           </div>
@@ -364,7 +310,7 @@
 
 <!-- modal area start-->
 <div
-        class="modal fade"
+    class="modal fade"
         id="modal_box"
         tabindex="-1"
         role="dialog"
@@ -374,7 +320,7 @@
     <div class="modal-content">
       <button
               type="button"
-              class="close"
+          class="close"
               data-bs-dismiss="modal"
               aria-label="Close"
       >
@@ -386,52 +332,52 @@
             <div class="col-lg-5 col-md-5 col-sm-12">
               <div class="modal_tab">
                 <div
-                        class="tab-content product-details-large"
+                    class="tab-content product-details-large"
                 >
                   <div
-                          class="tab-pane fade show active"
+                      class="tab-pane fade show active"
                           id="tab1"
                           role="tabpanel"
                   >
                     <div class="modal_tab_img">
                       <a href="#"
-                      ><<img src="client/img/product/product37.jpg"
+                      ><<img src="/client/img/product/product37.jpg"
                               alt=""
                       /></a>
                     </div>
                   </div>
                   <div
-                          class="tab-pane fade"
+                      class="tab-pane fade"
                           id="tab2"
                           role="tabpanel"
                   >
                     <div class="modal_tab_img">
                       <a href="#"
-                      ><<img src="client/img/product/product24.jpg"
+                      ><<img src="/client/img/product/product24.jpg"
                               alt=""
                       /></a>
                     </div>
                   </div>
                   <div
-                          class="tab-pane fade"
+                      class="tab-pane fade"
                           id="tab3"
                           role="tabpanel"
                   >
                     <div class="modal_tab_img">
                       <a href="#"
-                      ><<img src="client/img/product/product25.jpg"
+                      ><<img src="/client/img/product/product25.jpg"
                               alt=""
                       /></a>
                     </div>
                   </div>
                   <div
-                          class="tab-pane fade"
+                      class="tab-pane fade"
                           id="tab4"
                           role="tabpanel"
                   >
                     <div class="modal_tab_img">
                       <a href="#"
-                      ><<img src="client/img/product/product22.jpg"
+                      ><<img src="/client/img/product/product22.jpg"
                               alt=""
                       /></a>
                     </div>
@@ -439,54 +385,54 @@
                 </div>
                 <div class="modal_tab_button">
                   <ul
-                          class="nav product_navactive owl-carousel"
+                      class="nav product_navactive owl-carousel"
                           role="tablist"
                   >
                     <li>
                       <a
-                              class="nav-link active"
+                          class="nav-link active"
                               data-bs-toggle="tab"
                               href="#tab1"
                               role="tab"
                               aria-controls="tab1"
                               aria-selected="false"
-                      ><<img src="client/img/product/productbig1.jpg"
+                      ><<img src="/client/img/product/productbig1.jpg"
                               alt=""
                       /></a>
                     </li>
                     <li>
                       <a
-                              class="nav-link"
+                          class="nav-link"
                               data-bs-toggle="tab"
                               href="#tab2"
                               role="tab"
                               aria-controls="tab2"
                               aria-selected="false"
-                      ><<img src="client/img/product/productbig2.jpg"
+                      ><<img src="/client/img/product/productbig2.jpg"
                               alt=""
                       /></a>
                     </li>
                     <li>
                       <a
-                              class="nav-link button_three"
+                          class="nav-link button_three"
                               data-bs-toggle="tab"
                               href="#tab3"
                               role="tab"
                               aria-controls="tab3"
                               aria-selected="false"
-                      ><<img src="client/img/product/productbig4.jpg"
+                      ><<img src="/client/img/product/productbig4.jpg"
                               alt=""
                       /></a>
                     </li>
                     <li>
                       <a
-                              class="nav-link"
+                          class="nav-link"
                               data-bs-toggle="tab"
                               href="#tab4"
                               role="tab"
                               aria-controls="tab4"
                               aria-selected="false"
-                      ><<img src="client/img/product/productbig5.jpg"
+                      ><<img src="/client/img/product/productbig5.jpg"
                               alt=""
                       /></a>
                     </li>
@@ -500,9 +446,7 @@
                   <h2>Handbag feugiat</h2>
                 </div>
                 <div class="modal_price mb-10">
-                                            <span class="new_price"
-                                            >$64.99</span
-                                            >
+                  <span class="new_price">$64.99</span>
                   <span class="old_price"
                   >$78.99</span
                   >
@@ -523,36 +467,28 @@
                   <div class="variants_size">
                     <h2>size</h2>
                     <select class="select_option">
-                      <option selected value="1">
-                        s
+                      <option selected value="1"> s
                       </option>
                       <option value="1">m</option>
                       <option value="1">l</option>
-                      <option value="1">
-                        xl
+                      <option value="1"> xl
                       </option>
-                      <option value="1">
-                        xxl
+                      <option value="1"> xxl
                       </option>
                     </select>
                   </div>
                   <div class="variants_color">
                     <h2>color</h2>
                     <select class="select_option">
-                      <option selected value="1">
-                        purple
+                      <option selected value="1"> purple
                       </option>
-                      <option value="1">
-                        violet
+                      <option value="1"> violet
                       </option>
-                      <option value="1">
-                        black
+                      <option value="1"> black
                       </option>
-                      <option value="1">
-                        pink
+                      <option value="1"> pink
                       </option>
-                      <option value="1">
-                        orange
+                      <option value="1"> orange
                       </option>
                     </select>
                   </div>
@@ -565,8 +501,7 @@
                               value="1"
                               type="number"
                       />
-                      <button type="submit">
-                        add to cart
+                      <button type="submit"> add to cart
                       </button>
                     </form>
                   </div>
@@ -576,36 +511,31 @@
                   <ul>
                     <li class="facebook">
                       <a href="#"
-                      ><i
-                              class="fa fa-facebook"
+                      ><i class="fa fa-facebook"
                       ></i
                       ></a>
                     </li>
                     <li class="twitter">
                       <a href="#"
-                      ><i
-                              class="fa fa-twitter"
+                      ><i class="fa fa-twitter"
                       ></i
                       ></a>
                     </li>
                     <li class="pinterest">
                       <a href="#"
-                      ><i
-                              class="fa fa-pinterest"
+                      ><i class="fa fa-pinterest"
                       ></i
                       ></a>
                     </li>
                     <li class="google-plus">
                       <a href="#"
-                      ><i
-                              class="fa fa-google-plus"
+                      ><i class="fa fa-google-plus"
                       ></i
                       ></a>
                     </li>
                     <li class="linkedin">
                       <a href="#"
-                      ><i
-                              class="fa fa-linkedin"
+                      ><i class="fa fa-linkedin"
                       ></i
                       ></a>
                     </li>
