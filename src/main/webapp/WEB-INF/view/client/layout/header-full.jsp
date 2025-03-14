@@ -560,58 +560,21 @@
                     <div id="menu" class="text-left">
                         <ul class="offcanvas_main_menu">
                             <li class="menu-item-has-children active">
-                                <a href="#">Home</a>
-                                <ul class="sub-menu">
-                                    <li>
-                                        <a href="index.html">Home 1</a>
-                                    </li>
-                                    <li>
-                                        <a href="index-2.html">Home 2</a>
-                                    </li>
-                                    <li>
-                                        <a href="index-3.html">Home 3</a>
-                                    </li>
-                                    <li>
-                                        <a href="index-4.html">Home 4</a>
-                                    </li>
-                                    <li>
-                                        <a href="index-5.html">Home 5</a>
-                                    </li>
-                                    <li>
-                                        <a href="index-6.html">Home 6</a>
-                                    </li>
-                                    <li>
-                                        <a href="index-7.html">Home 7</a>
-                                    </li>
-                                    <li>
-                                        <a href="index-8.html">Home 8</a>
-                                    </li>
-                                </ul>
+                                <a href="/">Home</a>
                             </li>
                             <li class="menu-item-has-children">
                                 <a href="#">Shop</a>
                                 <ul class="sub-menu">
                                     <li class="menu-item-has-children">
                                         <a href="#">Shop Layouts</a>
-                                        <ul class="sub-menu">
-                                            <li>
-                                                <a href="shop-fullwidth.html">Full Width</a>
+                                        <ul>
+                                            <%--                          here--%>
+                                            <li><a href="/product/custom-build">Custom build</a></li>
+                                            <li><a href="#">Full Width list</a></li>
+                                            <li><a href="#">Right Sidebar </a></li>
+                                            <li><a href="#"> Right Sidebar list</a>
                                             </li>
-                                            <li>
-                                                <a href="shop-fullwidth-list.html">Full Width list</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop-right-sidebar.html">Right Sidebar
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="shop-right-sidebar-list.html">
-                                                    Right Sidebar
-                                                    list</a>
-                                            </li>
-                                            <li>
-                                                <a href="shop-list.html">List View</a>
-                                            </li>
+                                            <li><a href="/product/list">List View</a></li>
                                         </ul>
                                     </li>
                                     <li class="menu-item-has-children">

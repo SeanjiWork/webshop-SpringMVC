@@ -18,7 +18,7 @@
 
   <!-- CSS
 ========================= -->
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css  ">
   <!-- Plugins CSS -->
   <link rel="stylesheet" href="/client/css/plugins.css" />
 
@@ -137,19 +137,26 @@
                 metus nisi posuere nisl
               </p>
             </div>
-            <div class="product_variant color">
-              <h3>Available Options</h3>
-              <label>color</label>
-              <ul>
-                <li class="color1"><a href="#"></a></li>
-                <li class="color2"><a href="#"></a></li>
-                <li class="color3"><a href="#"></a></li>
-                <li class="color4"><a href="#"></a></li>
-              </ul>
-            </div>
             <div class="product_variant quantity">
               <label>quantity</label>
-              <input min="1" max="100" value="1" type="number"/>
+              <div class="d-flex align-items-center mt-2">
+                <div class="d-flex align-items-center">
+
+                  <!-- minus -->
+                  <button class="form-control me-1" onclick="minusQuanlity(1)">
+                    <i class="fa-solid fa-minus"></i>
+                  </button>
+
+                  <input type="text" class="form-control ms-1 me-1 text-center" id="quantity" value="1" min="1"/>
+
+                  <!-- plus -->
+                  <button class="form-control ms-1" onclick="plusQuanlity(1)">
+                    <i class="fa-solid fa-plus"></i>
+                  </button>
+
+                </div>
+              </div>
+
             </div>
             <div class="action_links">
               <ul>
@@ -174,7 +181,7 @@
 
             <div class="product_meta">
               <span>Category:
-                <a href="#">Clothing</a>
+                <a href="#">Products</a>
               </span>
             </div>
           </form>
@@ -393,6 +400,9 @@
 
 <!-- Main JS -->
 <script src="/client/js/main.js"></script>
+
+<!-- Custom_style JS -->
+<script src="/client/js/custom_style.js"></script>
 
 </body>
 </html>

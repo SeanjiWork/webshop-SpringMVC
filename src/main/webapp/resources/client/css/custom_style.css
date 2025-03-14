@@ -1,29 +1,128 @@
 /* //#e30019 */
 
-/* //scss Custom */
+body {
+    background-color: #ffffff !important;
+}
 
-/* .brand_container .single_brand {
+#quantity {
+    width: 60px;
+}
+
+.config-container {
+    background-color: #ffffff !important;
+}
+
+.config-card {
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #ffffff;
+    /* Đảm bảo nền trắng */
+    padding: 20px;
+}
+
+.config-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.config-container {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    background: #f8f9fa;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.config-card {
     display: flex;
-    justify-content: center;
     align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     padding: 10px;
-} */
-
-/* .owl-carousel .owl-stage {
+    transition: transform 0.2s;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #ffffff;
+    /* Nền trắng */
+    padding: 20px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Đẩy nội dung 2 bên */
 }
 
-.owl-carousel .owl-item img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+.config-card img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-right: 10px;
 }
 
-.category_product_carousel .single_category_product,
-.brand_container .single_brand {
-    min-width: 150px;
-    
-} */
+.config-card h5 {
+    margin: 0;
+    flex-grow: 1;
+    /* Cho phép tiêu đề mở rộng nếu cần */
+}
+
+.table-container {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.config-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Khoảng cách giữa các nút */
+}
+
+.config-actions .form-control {
+    width: 60px;
+    /* Giới hạn chiều rộng ô nhập số */
+    text-align: center;
+}
+
+.btn-custom {
+    background: #007bff;
+    color: white;
+    border-radius: 8px;
+    padding: 5px 10px;
+}
+
+.btn-danger {
+    border-radius: 5px;
+}
+
+.modal_price span {
+    color: #e30019;
+}
+
+.modal_add_to_cart form button:hover {
+    background: #e30019;
+    border-color: #e30019;
+}
+
+.modal_social ul li.linkedin a:hover {
+    background: #e30019;
+}
+
+.modal_social ul li.facebook a:hover {
+    background: #e30019;
+}
+
+.modal_social ul li.twitter a:hover {
+    background: #e30019;
+}
+
+.modal_social ul li.pinterest a:hover {
+    background: #e30019;
+}
+
+.modal_social ul li.google-plus a:hover {
+    background: #e30019;
+}
 
 .pagination ul li.current {
     background: #e30019;

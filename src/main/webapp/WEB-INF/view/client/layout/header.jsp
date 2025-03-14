@@ -369,7 +369,8 @@
                       <li>
                         <a href="#">Shop Layouts</a>
                         <ul>
-                          <li><a href="#">Full Width</a></li>
+<%--                          here--%>
+                          <li><a href="/product/custom-build">Custom build</a></li>
                           <li><a href="#">Full Width list</a></li>
                           <li><a href="#">Right Sidebar </a></li>
                           <li><a href="#"> Right Sidebar list</a>

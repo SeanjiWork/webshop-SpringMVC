@@ -17,4 +17,10 @@ public class ProductListController {
     public String getProductListDetail(Model model, @PathVariable long id) {
         return "client/product/product-details";
     }
+
+    @GetMapping("/product/custom-build")
+    public String getCustomBuild() {
+        return "client/custom-build/custom-build";
+    }
+
 }

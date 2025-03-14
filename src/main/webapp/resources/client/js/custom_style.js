@@ -1,80 +1,128 @@
-// $(document).ready(function () {
-//     $(".category_product_carousel").owlCarousel({
-//         loop: true,
-//         margin: 30,
-//         nav: false,
-//         dots: true,
-//         autoplay: true,
-//         autoplayTimeout: 3000,
-//         autoplayHoverPause: true,
-//         responsive: {
-//             0: { items: 1 },
-//             600: { items: 2 },
-//             1000: { items: 4 },
-//         },
-//     });
 
-//     $(".brand_container").owlCarousel({
-//         loop: true,
-//         margin: 20 /* Khoảng cách giữa các ảnh */,
-//         nav: false,
-//         dots: false,
-//         autoplay: true,
-//         autoplayTimeout: 2500,
-//         autoplayHoverPause: false,
-//         responsive: {
-//             0: { items: 2 } /* 2 ảnh khi màn hình nhỏ */,
-//             600: { items: 3 } /* 3 ảnh khi màn hình trung bình */,
-//             1000: { items: 5 } /* 5 ảnh khi màn hình lớn */,
-//         },
-//     });
-// });
+function plusQuanlity(number){
+    event.preventDefault();
+    // alert("Thêm vào giỏ hàng thành công");
+    $('#quantity').val(parseInt($('#quantity').val()) + number);
+}
 
-$(document).ready(function () {
-    function fixOwlCarousel(selector) {
-        $(selector).on(
-            "initialized.owl.carousel resized.owl.carousel",
-            function () {
-                setTimeout(() => {
-                    $(this).find(".owl-stage").css("width", "100%");
-                }, 100);
-            }
-        );
+function minusQuanlity(){
+    event.preventDefault();
+
+    if ($('#quantity').val() > 0) {
+        $('#quantity').val(parseInt($('#quantity').val()) - 1);
+    }
+}
+
+//  function changeQuantity(change) {
+//             let input = document.getElementById("quantity");
+//             let value = parseInt(input.value) || 0; // Nếu input rỗng thì lấy giá trị 0
+//             value += change;
+
+//             // Đảm bảo số lượng không nhỏ hơn 0
+//             if (value >= 0) {
+//                 input.value = value;
+//             } else {
+//                 input.value = 0;
+//             }
+//         }
+
+//         function validateInput() {
+//             let input = document.getElementById("quantity");
+//             let value = parseInt(input.value) || 0;
+
+//             // Ngăn nhập số âm
+//             if (value < 0) {
+//                 input.value = 0;
+//             }
+//         }
+
+let selectedProducts = {};
+
+function loadProducts(category) {
+    let products = {
+        'CPU': [
+            {name: 'Intel i5', price: 5000000, image: 'cpu.png'},
+            {name: 'Intel i7', price: 8000000, image: 'cpu.png'}
+        ],
+        'RAM': [
+            {name: '8GB DDR4', price: 1500000, image: 'ram.png'},
+            {name: '16GB DDR4', price: 2500000, image: 'ram.png'}
+        ]
+    };
+
+    let html = '';
+    products[category].forEach((p, index) => {
+        html += `<div class='product-item d-flex align-items-center mb-2' onclick='selectProduct("${category}", ${index})'>
+                    <img src='${p.image}' class='me-3' width='50'>
+                    <span>${p.name} - ${p.price.toLocaleString()} VNĐ</span>
+                 </div>`;
+    });
+
+    document.getElementById('productList').innerHTML = html;
+}
+
+function selectProduct(category, index) {
+    let products = {
+        'CPU': [
+            {name: 'Intel i5', price: 5000000, image: 'cpu.png'},
+            {name: 'Intel i7', price: 8000000, image: 'cpu.png'}
+        ],
+        'RAM': [
+            {name: '8GB DDR4', price: 1500000, image: 'ram.png'},
+            {name: '16GB DDR4', price: 2500000, image: 'ram.png'}
+        ]
+    };
+    let product = products[category][index];
+
+    // Nếu sản phẩm đã tồn tại, chỉ tăng số lượng
+    if (selectedProducts[category]) {
+        selectedProducts[category].quantity++;
+    } else {
+        selectedProducts[category] = {...product, quantity: 1};
     }
 
-    $(".category_product_carousel").owlCarousel({
-        loop: true,
-        margin: 30,
-        nav: false,
-        dots: true,
-        autoplay: true,
-        autoplayTimeout: 3000,
-        autoplayHoverPause: true,
-        responsive: {
-            0: { items: 1 },
-            600: { items: 2 },
-            1000: { items: 4 },
-        },
-        onInitialized: function () {
-            fixOwlCarousel(".category_product_carousel");
-        },
-    });
+    updateTable();
+    updateCardQuantity(category);
+    document.querySelector('#productModal .btn-close').click();
+}
 
-    $(".brand_container").owlCarousel({
-        loop: true,
-        margin: 20,
-        nav: false,
-        dots: false,
-        autoplay: true,
-        autoplayTimeout: 2500,
-        autoplayHoverPause: false,
-        responsive: {
-            0: { items: 2 },
-            600: { items: 3 },
-            1000: { items: 5 },
-        },
-        onInitialized: function () {
-            fixOwlCarousel(".brand_container");
-        },
-    });
-});
+function updateTable() {
+    let tableBody = document.getElementById('productTable');
+    tableBody.innerHTML = '';
+
+    for (let category in selectedProducts) {
+        let product = selectedProducts[category];
+        let total = product.price * product.quantity;
+        let row = `<tr id="row-${category}">
+            <td><img src="${product.image}" width="50"></td>
+            <td>${product.name}</td>
+            <td>${product.quantity}</td>
+            <td>${product.price.toLocaleString()}</td>
+            <td>${total.toLocaleString()}</td>
+        </tr>`;
+        tableBody.innerHTML += row;
+    }
+}
+
+function updateCardQuantity(category) {
+    let inputField = document.querySelector(`.config-card[data-category="${category}"] input`);
+    if (inputField) {
+        inputField.value = selectedProducts[category] ? selectedProducts[category].quantity : 1;
+    }
+}
+
+function changeQuantity(category, value) {
+    if (selectedProducts[category]) {
+        selectedProducts[category].quantity = parseInt(value);
+        if (selectedProducts[category].quantity <= 0) {
+            delete selectedProducts[category];
+        }
+        updateTable();
+    }
+}
+
+function removeProduct(category) {
+    delete selectedProducts[category];
+    document.getElementById('row-' + category)?.remove();
+    updateCardQuantity(category);
+}
