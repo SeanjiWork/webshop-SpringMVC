@@ -1,3 +1,4 @@
+// image user
 $(document).ready(() => {
     const photoInp = $("#photo");
     let file;
@@ -26,3 +27,25 @@ $(document).ready(() => {
         }
     });
 });
+
+//image product
+function previewImage(event) {
+    const input = event.target;
+    const previewContainer = document.getElementById("imagePreview");
+
+    if (input.files && input.files[0]) {
+        const reader = new FileReader();
+
+        reader.onload = function(e) {
+            // Xóa nội dung cũ trong ô preview
+            previewContainer.innerHTML = '';
+
+            // Tạo thẻ img để hiển thị ảnh
+            const img = document.createElement("img");
+            img.src = e.target.result;
+            previewContainer.appendChild(img);
+        };
+
+        reader.readAsDataURL(input.files[0]); // Đọc file ảnh
+    }
+}

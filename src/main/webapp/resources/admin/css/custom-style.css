@@ -8,10 +8,12 @@
 }
 
 .image-container {
-    width: 150px; /* Đảm bảo khung là hình vuông */
+    width: 150px;
+    /* Đảm bảo khung là hình vuông */
     height: 150px;
     border-radius: 50%;
-    overflow: hidden; /* Cắt bỏ phần dư thừa */
+    overflow: hidden;
+    /* Cắt bỏ phần dư thừa */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,4 +56,35 @@
 
 .btn-delete:hover {
     background-color: #c82333;
+}
+
+/*Product*/
+
+.image-preview-container {
+    width: 200px;
+    height: 200px;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    /* Chặn ảnh bị tràn */
+    background-color: #f8f9fa;
+    position: relative;
+}
+
+.image-preview-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    /* Giữ tỉ lệ ảnh mà không bị méo */
+}
+
+.custom-file-input {
+    display: none;
+}
+
+.upload-btn {
+    margin-top: 10px;
 }

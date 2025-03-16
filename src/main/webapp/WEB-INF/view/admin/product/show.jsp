@@ -42,13 +42,13 @@
 
         <div class="d-flex justify-content-between mb-4">
           <h3>Table Users</h3>
-          <a href="/admin/user/create" class="btn btn-outline-primary">Create a user</a>
+          <a href="/admin/product/create" class="btn btn-outline-primary">Create a product</a>
         </div>
 
         <div class="card mb-4">
           <div class="card-header">
             <i class="fas fa-table me-1"></i>
-            DataTable Example
+            DataTable Products
           </div>
 
           <div class="card-body">
@@ -56,21 +56,23 @@
               <thead>
               <tr>
                 <th>ID</th>
-                <th>Email</th>
-                <th>Fullname</th>
-                <th>Phone</th>
-                <th>Status</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Short Description</th>
+                <th>Quantity</th>
+                <th>Image</th>
                 <th>Action</th>
               </tr>
               </thead>
               <tfoot>
               <tr>
+                <th>ID</th>
                 <th>Name</th>
-                <th>Position</th>
-                <th>Office</th>
-                <th>Age</th>
-                <th>Start date</th>
-                <th>Salary</th>
+                <th>Price</th>
+                <th>Short Description</th>
+                <th>Quantity</th>
+                <th>Image</th>
+                <th>Action</th>
               </tr>
               </tfoot>
               <tbody>
