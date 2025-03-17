@@ -19,6 +19,11 @@ public class UploadService {
     }
 
     public String handleSaveUploadFile(MultipartFile file, String targetFolder){
+        // don't upload file
+        if (file.isEmpty()) {
+            return "";
+        } 
+        // relative path: absolute path
         String rootPath = this.servletContext.getRealPath("/resources/images");
         String finalName = "";
         try {
@@ -26,7 +31,7 @@ public class UploadService {
             File dir = new File(rootPath + File.separator + targetFolder);
             if (!dir.exists())
                 dir.mkdirs();
-// Create the file on server
+        // Create the file on server
             finalName = System.currentTimeMillis() + "-" + file.getOriginalFilename();
             File serverFile = new File(dir.getAbsolutePath() + File.separator + finalName);
 

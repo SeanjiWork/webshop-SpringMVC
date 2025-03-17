@@ -65,23 +65,37 @@
 
                             <!-- Email -->
                             <div class="form-group mb-3 col-12 col-md-6">
+                                <c:set var="errorEmail">
+                                    <form:errors path="email" cssClass="invalid-feedback" />
+                                </c:set>
                                 <label class="form-label">Email</label>
-                                <form:input type="email" class="form-control" path="email"
-                                            placeholder="Enter your email"/>
+                                <form:input type="email" class="form-control ${not empty errorEmail ? 'is-invalid'
+                                 : ''}" path="email" placeholder="Enter your email"/>
+                                ${errorEmail}
+
+
                             </div>
 
                             <!-- Password -->
                             <div class="form-group mb-3 col-12 col-md-6">
+                                <c:set var="errorPassword">
+                                    <form:errors path="password" cssClass="invalid-feedback" />
+                                </c:set>
                                 <label class="form-label">Password</label>
-                                <form:input type="password" class="form-control" path="password"
-                                            placeholder="Enter your password"/>
+                                <form:input type="password" class="form-control ${not empty errorEmail ? 'is-invalid'
+                                 : ''}" path="password" placeholder="Enter your password"/>
+                                ${errorPassword}
                             </div>
 
                             <!-- FullName -->
                             <div class="form-group mb-3 col-12 col-md-6">
+                                <c:set var="errorFullname">
+                                    <form:errors path="fullname" cssClass="invalid-feedback" />
+                                </c:set>
                                 <label class="form-label">Fullname</label>
-                                <form:input type="text" class="form-control" path="fullname"
-                                            placeholder="Enter your fullname"/>
+                                <form:input type="text" class="form-control ${not empty errorEmail ? 'is-invalid'
+                                 : ''}" path="fullname" placeholder="Enter your fullname"/>
+                                ${errorFullname}
                             </div>
 
                             <!-- Phone -->
