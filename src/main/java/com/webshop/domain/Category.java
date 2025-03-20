@@ -14,7 +14,7 @@ public class Category extends BaseEntity {
     private String image;
     private String url;
     private String content;
-    private int status;
+    private Integer status = 1;
     private String type;
 
     // BrandCategory: Category - one => many - BrandCategory
@@ -65,11 +65,11 @@ public class Category extends BaseEntity {
         this.content = content;
     }
 
-    public int getStatus() {
+     public Integer getStatus() {
         return status;
     }
 
-    public void setStatus(int status) {
+    public void setStatus(Integer status) {
         this.status = status;
     }
 
@@ -109,4 +109,6 @@ public class Category extends BaseEntity {
                 ", type='" + type + '\'' +
                 '}';
     }
+
+   
 }

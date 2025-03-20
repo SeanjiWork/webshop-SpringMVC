@@ -7,17 +7,37 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.DecimalMin;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 
 @Entity
 @Table(name = "products")
 public class Product extends BaseEntity {
+    @NotNull
+    @NotEmpty(message = "Product name cannot be empty")
     private String name;
+
+    @NotNull
+    @Size(min = 3, message = "shortDescription must be at least 3 characters")
     private String shortDescription;
+
+    @NotNull
+    @Size(min = 3, message = "detailDescription must be at least 3 characters")
     private String detailDescription;
+    
+    @NotNull
+    @DecimalMin(value = "1.0", inclusive = false, message = "Price must be at least 1.0")
     private double price;
+
     private String image;
     private String url;
-    private String status;
+    private Integer status = 1;
+   
+    @NotNull
+    @Min(value = 1, message = "Quantity must be at least 1")
     private long quantity;
     private long sold;
 
@@ -99,11 +119,11 @@ public class Product extends BaseEntity {
         this.url = url;
     }
 
-    public String getStatus() {
+    public Integer getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(Integer status) {
         this.status = status;
     }
 
@@ -170,6 +190,8 @@ public class Product extends BaseEntity {
     public void setOrderDetails(List<OrderDetail> orderDetails) {
         this.orderDetails = orderDetails;
     }
+
+    
 
     @Override
     public String toString() {

@@ -11,7 +11,7 @@ import jakarta.persistence.Table;
 public class Brand extends BaseEntity {
     private String name;
     private String image;
-    private int status;
+    private Integer status = 1;
 
     //BrandCategory: Brand - one => many - BrandCategory
     @OneToMany(mappedBy = "brand")
@@ -37,11 +37,11 @@ public class Brand extends BaseEntity {
         this.image = image;
     }
 
-    public int getStatus() {
+    public Integer getStatus() {
         return status;
     }
 
-    public void setStatus(int status) {
+    public void setStatus(Integer status) {
         this.status = status;
     }
 
@@ -69,4 +69,6 @@ public class Brand extends BaseEntity {
                 ", status=" + status +
                 '}';
     }
+
+
 }
