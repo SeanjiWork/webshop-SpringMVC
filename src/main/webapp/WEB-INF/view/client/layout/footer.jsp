@@ -1,6 +1,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
+<%@ taglib  prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
 <!--brand newsletter area start-->
 <div class="brand_newsletter_area">
@@ -56,9 +57,7 @@
       <div class="row">
         <div class="col-lg-4 col-md-5">
           <div class="widgets_container contact_us">
-            <a href="index.html"
-            ><img src="/client/img/logo/logo.png" alt=""
-            /></a>
+            <a href="index.html"><img src="/client/img/logo/logo.png" alt=""/></a>
             <div class="footer_contact">
               <ul>
                 <li>
@@ -66,8 +65,7 @@
                   Rd,Chiswick, London
                 </li>
                 <li>
-                  <i class="zmdi zmdi-phone-setting"
-                  ></i><span>Phone:</span>
+                  <i class="zmdi zmdi-phone-setting" ></i><span>Phone:</span>
                   <a href="tel:(+1) 866-540-3229">
                   (+1) 866-540-3229
                 </a>
@@ -81,33 +79,28 @@
             <div class="social_icone">
               <ul>
                 <li class="share">
-                  <a href="#" title="rss"
-                  ><i class="fa fa-share-alt"></i></a>
+                  <a href="#" title="rss" ><i class="fa fa-share-alt"></i></a>
                   <div class="social_title">
                     <p>Subscribe</p>
                     <h3>Rss Feed</h3>
                   </div>
                 </li>
                 <li class="twitter">
-                  <a href="#" title="twitter"
-                  ><i class="fa fa-twitter"></i></a>
+                  <a href="#" title="twitter" ><i class="fa fa-twitter"></i></a>
                   <div class="social_title">
                     <p>Follow Us</p>
                     <h3>Twitter</h3>
                   </div>
                 </li>
                 <li class="facebook">
-                  <a href="#" title="facebook"
-                  ><i class="fa fa-facebook"></i></a>
+                  <a href="#" title="facebook" ><i class="fa fa-facebook"></i></a>
                   <div class="social_title">
                     <p>Find Us</p>
                     <h3>Facebook</h3>
                   </div>
                 </li>
                 <li class="google_plus">
-                  <a href="#" title="google"
-                  ><i class="fa fa-google-plus"
-                  ></i></a>
+                  <a href="#" title="google" ><i class="fa fa-google-plus" ></i></a>
                   <div class="social_title">
                     <p>Find Us</p>
                     <h3>Google+</h3>
@@ -124,31 +117,14 @@
                 <h3>CUSTOMER SERVICE</h3>
                 <div class="footer_menu">
                   <ul>
-                    <li>
-                      <a href="#"
-                      >Shipping & Returns</a>
-                    </li>
-                    <li>
-                      <a href="#"> Secure Shopping</a>
-                    </li>
-                    <li>
-                      <a href="#"
-                      >International
-                        Shipping</a>
-                    </li>
-                    <li>
-                      <a href="#"> Affiliates</a>
-                    </li>
-                    <li>
-                      <a href="contact.html"> Contact</a>
-                    </li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#"> Secure Shopping</a></li>
+                    <li><a href="#">International Shipping</a></li>
+                    <li><a href="#"> Affiliates</a></li>
+                    <li><a href="#"> Contact</a></li>
                     <li><a href="#"> Travel</a></li>
-                    <li>
-                      <a href="#">ecommerce</a>
-                    </li>
-                    <li>
-                      <a href="#"> Creative</a>
-                    </li>
+                    <li><a href="#">ecommerce</a></li>
+                    <li><a href="#"> Creative</a></li>
                   </ul>
                 </div>
               </div>
@@ -158,31 +134,14 @@
                 <h3>Information</h3>
                 <div class="footer_menu">
                   <ul>
-                    <li>
-                      <a href="about.html"
-                      >About Us</a>
-                    </li>
-                    <li>
-                      <a href="#"
-                      >Delivery infomation</a>
-                    </li>
-                    <li>
-                      <a href="#"
-                      >Privacy Policy</a>
-                    </li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Delivery infomation</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
                     <li><a href="#"> Travel</a></li>
-                    <li>
-                      <a href="blog.html">Blog</a>
-                    </li>
-                    <li>
-                      <a href="#">Portfolio</a>
-                    </li>
-                    <li>
-                      <a href="#">Conditions</a>
-                    </li>
-                    <li>
-                      <a href="#"> Frequently Questions</a>
-                    </li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Conditions</a></li>
+                    <li><a href="#"> Frequently Questions</a></li>
                   </ul>
                 </div>
               </div>
@@ -195,53 +154,35 @@
             <div class="Latest_Posts_wrapper">
               <div class="single_Latest_Posts">
                 <div class="Latest_Posts_thumb">
-                  <a href="blog-details.html"
-                  ><img src="/client/img/category/post1.jpg" alt="" /></a>
+                  <a href="blog-details.html" ><img src="/client/img/category/post1.jpg" alt="" /></a>
                 </div>
                 <div class="Latest_Posts_content">
                   <h3>
-                    <a href="blog-details.html"
-                    >Blog image post</a
-                    >
+                    <a href="blog-details.html">Blog image post</a>
                   </h3>
-                  <span
-                  ><i class="zmdi zmdi-card-sd"
-                  ></i>                         10 August, 2021</span
-                  >
+                  <span><i class="zmdi zmdi-card-sd" ></i>                         10 August, 2021</span>
                 </div>
               </div>
               <div class="single_Latest_Posts">
                 <div class="Latest_Posts_thumb">
-                  <a href="blog-details.html"
-                  ><img src="/client/img/category/post2.jpg" alt="" /></a>
+                  <a href="blog-details.html" ><img src="/client/img/category/post2.jpg" alt="" /></a>
                 </div>
                 <div class="Latest_Posts_content">
                   <h3>
-                    <a href="blog-details.html"
-                    >Post with Gallery</a
-                    >
+                    <a href="blog-details.html">Post with Gallery</a>
                   </h3>
-                  <span
-                  ><i class="zmdi zmdi-card-sd"
-                  ></i>                         10 August, 2021</span
-                  >
+                  <span><i class="zmdi zmdi-card-sd" ></i>                         10 August, 2021</span>
                 </div>
               </div>
               <div class="single_Latest_Posts">
                 <div class="Latest_Posts_thumb">
-                  <a href="blog-details.html"
-                  ><img src="/client/img/category/post3.jpg" alt="" /></a>
+                  <a href="blog-details.html" ><img src="/client/img/category/post3.jpg" alt="" /></a>
                 </div>
                 <div class="Latest_Posts_content">
                   <h3>
-                    <a href="blog-details.html"
-                    >Post with Audio</a
-                    >
+                    <a href="blog-details.html">Post with Audio</a>
                   </h3>
-                  <span
-                  ><i class="zmdi zmdi-card-sd"
-                  ></i>                         10 August, 2021</span
-                  >
+                  <span><i class="zmdi zmdi-card-sd" ></i>                         10 August, 2021</span>
                 </div>
               </div>
             </div>
@@ -309,21 +250,10 @@
 <!--footer area end-->
 
 <!-- modal area start-->
-<div
-    class="modal fade"
-        id="modal_box"
-        tabindex="-1"
-        role="dialog"
-        aria-hidden="true"
->
+<div class="modal fade" id="modal_box" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
-      <button
-              type="button"
-          class="close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-      >
+      <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
         <span aria-hidden="true">&times;</span>
       </button>
       <div class="modal_body">
@@ -331,111 +261,50 @@
           <div class="row">
             <div class="col-lg-5 col-md-5 col-sm-12">
               <div class="modal_tab">
-                <div
-                    class="tab-content product-details-large"
-                >
-                  <div
-                      class="tab-pane fade show active"
-                          id="tab1"
-                          role="tabpanel"
-                  >
-                    <div class="modal_tab_img">
-                      <a href="#"
-                      ><<img src="/client/img/product/product37.jpg"
-                              alt=""
-                      /></a>
+                <div class="tab-content product-details-large">
+                  <div class="tab-pane fade show active" id="tab1" role="tabpanel" >
+                    <div class="modal_tab_img"><a href="#"><img src="/images/product/${product.image}" alt=""/></a>
                     </div>
                   </div>
-                  <div
-                      class="tab-pane fade"
-                          id="tab2"
-                          role="tabpanel"
-                  >
-                    <div class="modal_tab_img">
-                      <a href="#"
-                      ><<img src="/client/img/product/product24.jpg"
-                              alt=""
-                      /></a>
+                  <div class="tab-pane fade" id="tab2" role="tabpanel" >
+                    <div class="modal_tab_img"><a href="#"><img src="/client/img/product/product24.jpg" alt=""/></a>
                     </div>
                   </div>
-                  <div
-                      class="tab-pane fade"
-                          id="tab3"
-                          role="tabpanel"
-                  >
-                    <div class="modal_tab_img">
-                      <a href="#"
-                      ><<img src="/client/img/product/product25.jpg"
-                              alt=""
-                      /></a>
+                  <div class="tab-pane fade" id="tab3" role="tabpanel" >
+                    <div class="modal_tab_img"><a href="#"><img src="/client/img/product/product25.jpg" alt="" /></a>
                     </div>
                   </div>
-                  <div
-                      class="tab-pane fade"
-                          id="tab4"
-                          role="tabpanel"
-                  >
-                    <div class="modal_tab_img">
-                      <a href="#"
-                      ><<img src="/client/img/product/product22.jpg"
-                              alt=""
-                      /></a>
+                  <div class="tab-pane fade" id="tab4" role="tabpanel" >
+                    <div class="modal_tab_img"><a href="#"><img src="/client/img/product/product22.jpg" alt="" /></a>
                     </div>
                   </div>
                 </div>
                 <div class="modal_tab_button">
-                  <ul
-                      class="nav product_navactive owl-carousel"
-                          role="tablist"
-                  >
-                    <li>
-                      <a
-                          class="nav-link active"
+                  <ul class="nav product_navactive owl-carousel" role="tablist" >
+                    <li><a class="nav-link active"
                               data-bs-toggle="tab"
                               href="#tab1"
                               role="tab"
                               aria-controls="tab1"
-                              aria-selected="false"
-                      ><<img src="/client/img/product/productbig1.jpg"
-                              alt=""
-                      /></a>
-                    </li>
-                    <li>
-                      <a
-                          class="nav-link"
+                              aria-selected="false"><img src="/client/img/product/productbig1.jpg" alt="" /></a></li>
+                    <li><a class="nav-link"
                               data-bs-toggle="tab"
                               href="#tab2"
                               role="tab"
                               aria-controls="tab2"
-                              aria-selected="false"
-                      ><<img src="/client/img/product/productbig2.jpg"
-                              alt=""
-                      /></a>
-                    </li>
-                    <li>
-                      <a
-                          class="nav-link button_three"
+                              aria-selected="false"><img src="/client/img/product/productbig2.jpg" alt="" /></a></li>
+                    <li><a class="nav-link button_three"
                               data-bs-toggle="tab"
                               href="#tab3"
                               role="tab"
                               aria-controls="tab3"
-                              aria-selected="false"
-                      ><<img src="/client/img/product/productbig4.jpg"
-                              alt=""
-                      /></a>
-                    </li>
-                    <li>
-                      <a
-                          class="nav-link"
+                              aria-selected="false"><img src="/client/img/product/productbig4.jpg" alt="" /></a></li>
+                    <li><a class="nav-link"
                               data-bs-toggle="tab"
                               href="#tab4"
                               role="tab"
                               aria-controls="tab4"
-                              aria-selected="false"
-                      ><<img src="/client/img/product/productbig5.jpg"
-                              alt=""
-                      /></a>
-                    </li>
+                              aria-selected="false"><img src="/client/img/product/productbig5.jpg" alt="" /></a></li>
                   </ul>
                 </div>
               </div>
@@ -443,13 +312,15 @@
             <div class="col-lg-7 col-md-7 col-sm-12">
               <div class="modal_right">
                 <div class="modal_title mb-10">
-                  <h2>Handbag feugiat</h2>
+                  <h2>${product.name}</h2>
                 </div>
                 <div class="modal_price mb-10">
-                  <span class="new_price">$64.99</span>
-                  <span class="old_price"
-                  >$78.99</span
-                  >
+                  <span style="font-size: 15px" class="current_price">
+                       <fmt:formatNumber type="number" value="${product.price}" /> đ
+                     </span>
+                  <span style="font-size: 13px" class="old_price">
+                      <fmt:formatNumber type="number" value="${product.price}" /> đ
+                    </span>
                 </div>
                 <div class="modal_description mb-15">
                   <p>
@@ -467,29 +338,21 @@
                   <div class="variants_size">
                     <h2>size</h2>
                     <select class="select_option">
-                      <option selected value="1"> s
-                      </option>
+                      <option selected value="1"> s</option>
                       <option value="1">m</option>
                       <option value="1">l</option>
-                      <option value="1"> xl
-                      </option>
-                      <option value="1"> xxl
-                      </option>
+                      <option value="1"> xl</option>
+                      <option value="1"> xxl</option>
                     </select>
                   </div>
                   <div class="variants_color">
                     <h2>color</h2>
                     <select class="select_option">
-                      <option selected value="1"> purple
-                      </option>
-                      <option value="1"> violet
-                      </option>
-                      <option value="1"> black
-                      </option>
-                      <option value="1"> pink
-                      </option>
-                      <option value="1"> orange
-                      </option>
+                      <option selected value="1"> purple</option>
+                      <option value="1"> violet</option>
+                      <option value="1"> black</option>
+                      <option value="1"> pink</option>
+                      <option value="1"> orange</option>
                     </select>
                   </div>
                   <div class="modal_add_to_cart">
@@ -509,36 +372,11 @@
                 <div class="modal_social">
                   <h2>Share this product</h2>
                   <ul>
-                    <li class="facebook">
-                      <a href="#"
-                      ><i class="fa fa-facebook"
-                      ></i
-                      ></a>
-                    </li>
-                    <li class="twitter">
-                      <a href="#"
-                      ><i class="fa fa-twitter"
-                      ></i
-                      ></a>
-                    </li>
-                    <li class="pinterest">
-                      <a href="#"
-                      ><i class="fa fa-pinterest"
-                      ></i
-                      ></a>
-                    </li>
-                    <li class="google-plus">
-                      <a href="#"
-                      ><i class="fa fa-google-plus"
-                      ></i
-                      ></a>
-                    </li>
-                    <li class="linkedin">
-                      <a href="#"
-                      ><i class="fa fa-linkedin"
-                      ></i
-                      ></a>
-                    </li>
+                    <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li class="pinterest"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                    <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
                   </ul>
                 </div>
               </div>
@@ -549,5 +387,4 @@
     </div>
   </div>
 </div>
-
 <!-- modal area end-->

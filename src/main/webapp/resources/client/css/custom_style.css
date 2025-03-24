@@ -99,6 +99,15 @@ body {
     color: #e30019;
 }
 
+.alarm_icone i {
+    color: #e30019;
+}
+
+.deals_product_carousel .owl-nav>*:hover {
+    background: #e30019 !important;
+    border-color: #e30019 !important;
+}
+
 .modal_add_to_cart form button:hover {
     background: #e30019;
     border-color: #e30019;

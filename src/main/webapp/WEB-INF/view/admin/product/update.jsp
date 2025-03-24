@@ -16,8 +16,50 @@
     <link href="/admin/css/styles.css" rel="stylesheet"/>
     <link href="/admin/css/custom-style.css" rel="stylesheet"/>
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js" crossorigin="anonymous"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+    <script>
+        <%--$(document).ready(() => {--%>
+        <%--    let orgImage = "${newProduct.image}".trim();--%>
+
+        <%--    if (orgImage && orgImage !== "null") {--%>
+        <%--        const urlImage = "/images/product/" + orgImage;--%>
+        <%--        console.log("Ảnh gốc:", urlImage);--%>
+        <%--        $("#avatarPreview").attr("src", urlImage).show();--%>
+        <%--    }--%>
+
+        <%--    $("#imageUpload").change(function (event) {--%>
+        <%--        const input = event.target;--%>
+        <%--        if (input.files && input.files[0]) {--%>
+        <%--            const reader = new FileReader();--%>
+        <%--            reader.onload = function (e) {--%>
+        <%--                console.log("Ảnh mới:", e.target.result);--%>
+        <%--                $("#avatarPreview").attr("src", e.target.result).show();--%>
+        <%--            };--%>
+        <%--            reader.readAsDataURL(input.files[0]);--%>
+        <%--        }--%>
+        <%--    });--%>
+        <%--});--%>
+
+    </script>
+
+    <script>
+        $(document).ready(() => {
+            const imageUpload = $("#imageUpload");
+            const orgImage = "${newProduct.image}";
+            if (orgImage) {
+                const urlImage = "/images/product/" + orgImage;
+                $("#imagePreview").attr("src", urlImage);
+                $("#imagePreview").css({ "display": "block" });
+            }
+            imageUpload.change(function (e) {
+                const imgURL = URL.createObjectURL(e.target.files[0]);
+                $("#imagePreview").attr("src", imgURL);
+                $("#imagePreview").css({ "display": "block" });
+            });
+        });
+    </script>
+
+
 </head>
 <body class="sb-nav-fixed">
 <%--Header--%>
@@ -148,8 +190,9 @@
                                 <div>
                                     <div class="d-flex flex-column align-items-start">
                                         <!-- show preview image -->
-                                        <div class="image-preview-container" id="imagePreview">
-                                            <span class="text-muted">Chưa có ảnh</span>
+                                        <div class="image-preview-container" id="imagePreview" >
+<%--                                            <span class="text-muted">Chưa có ảnh</span>--%>
+                                            <img src="" style="max-width: 200px; display: none;" alt="Ảnh sản phẩm">
                                         </div>
 
                                         <!-- Button choose image -->

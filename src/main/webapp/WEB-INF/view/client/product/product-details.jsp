@@ -1,12 +1,14 @@
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
+<%@ taglib  prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <title>Pallas - eCommerce Bootstrap 4 Template</title>
+  <title>${product.name} - PCShop</title>
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- Favicon -->
@@ -57,8 +59,8 @@
         <div class="product-details-tab">
           <div id="img-1" class="zoomWrapper single-zoom">
             <a href="#">
-              <img id="zoom1" src="/client/img/product/productbig1.jpg"
-                      data-zoom-image="/client/img/product/productbig1.jpg" alt="big-1"/>
+              <img id="zoom1" src="/images/product/${product.image}"
+                      data-zoom-image="/images/product/${product.image}" alt="big-1"/>
             </a>
           </div>
           <div class="single-zoom-thumb">
@@ -96,7 +98,8 @@
                         class="elevatezoom-gallery active"
                         data-update=""
                         data-image="/client/img/product/productbig5.jpg"
-                        data-zoom-image="/client/img/product/productbig5.jpg" > <img src="/client/img/product/productbig5.jpg" alt="zo-th-1" />
+                        data-zoom-image="/client/img/product/productbig5.jpg" >
+                  <img src="/client/img/product/productbig5.jpg" alt="zo-th-1" />
                 </a>
               </li>
             </ul>
@@ -106,7 +109,8 @@
       <div class="col-lg-6 col-md-6">
         <div class="product_d_right">
           <form action="#">
-            <h1>Aliquam lobortis</h1>
+            <h1>${product.name}</h1>
+            <h4>Status: ${product.status}</h4>
             <div class="product_rating">
               <ul>
                 <li> <a href="#" ><i class="zmdi zmdi-star-outline" ></i ></a>
@@ -122,19 +126,16 @@
               </ul>
             </div>
             <div class="price_box">
-              <span class="current_price">$70.00</span>
-              <span class="old_price">$80.00</span>
+               <span style="font-size: 15px" class="current_price">
+                       <fmt:formatNumber type="number" value="${product.price}" /> đ
+               </span>
+              <span style="font-size: 13px" class="old_price">
+                      <fmt:formatNumber type="number" value="${product.price}" /> đ
+              </span>
             </div>
             <div class="product_desc">
               <p>
-                eget velit. Donec ac tempus ante. Fusce
-                ultricies massa massa. Fusce aliquam,
-                purus eget sagittis vulputate, sapien
-                libero hendrerit est, sed commodo augue
-                nisi non neque. Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit. Sed
-                tempor, lorem et placerat vestibulum,
-                metus nisi posuere nisl
+                ${product.shortDescription}
               </p>
             </div>
             <div class="product_variant quantity">
@@ -247,44 +248,31 @@
                     class="tab-pane fade show active" id="info"
                     role="tabpanel" >
               <div class="product_info_content">
-                <p> Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit. Nam
-                  fringilla augue nec est tristique
-                  auctor. Donec non est at libero
-                  vulputate rutrum. Morbi ornare
-                  lectus quis justo gravida semper.
-                  Nulla tellus mi, vulputate
-                  adipiscing cursus eu, suscipit id
-                  nulla.
-                </p>
-                <p> Pellentesque aliquet, sem eget
-                  laoreet ultrices, ipsum metus
-                  feugiat sem, quis fermentum turpis
-                  eros eget velit. Donec ac tempus
-                  ante. Fusce ultricies massa massa.
-                  Fusce aliquam, purus eget sagittis
-                  vulputate, sapien libero hendrerit
-                  est, sed commodo augue nisi non
-                  neque. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit. Sed
-                  tempor, lorem et placerat
-                  vestibulum, metus nisi posuere nisl,
-                  in accumsan elit odio quis mi. Cras
-                  neque metus, consequat et blandit
-                  et, luctus a nunc. Etiam gravida
-                  vehicula tellus, in imperdiet ligula
-                  euismod eget.
-                </p>
+                <p> ${product.shortDescription}</p>
+                <p> ${product.detailDescription}</p>
               </div>
             </div>
             <div
                     class="tab-pane fade" id="sheet"
                     role="tabpanel" >
               <div class="product_d_table">
-                <form action="#"> <table>   <tbody>   <tr>     <td class="first_child">       Compositions
-                      </td>     <td>Polyester</td>   </tr>   <tr>     <td class="first_child">       Styles
-                      </td>     <td>Girly</td>   </tr>   <tr>     <td class="first_child">       Properties
-                      </td>     <td>Short Dress</td>   </tr>   </tbody> </table>
+                <form action="#">
+                  <table>
+                    <tbody>
+                    <tr>
+                      <td class="first_child">Target</td>
+                      <td>${product.target.name}</td>
+                    </tr>
+                    <tr>
+                      <td class="first_child">Category</td>
+                      <td>${product.category.name}</td>
+                    </tr>
+                    <tr>
+                      <td class="first_child">Brand</td>
+                      <td>${product.brand.name}</td>
+                    </tr>
+                    </tbody>
+                  </table>
                 </form>
               </div>
               <div class="product_info_content">
@@ -319,60 +307,50 @@
                     </div> <div class="comment_text">   <div class="reviews_meta">
                       <div class="star_rating">
                         <ul>
-                          <li>
-                            <a href="#" ><i class="ion-ios-star" ></i></a>        </li>         <li>           <a href="#" ><i class="ion-ios-star" ></i></a>        </li>         <li>           <a href="#" ><i class="ion-ios-star" ></i></a>
-        </li>         <li>           <a href="#" ><i class="ion-ios-star" ></i></a>
-        </li>         <li>           <a href="#" ><i class="ion-ios-star" ></i></a>
-        </li>       </ul>     </div>     <p>       <strong>admin </strong>-
-                        September 12, 2018
-                      </p>     <span>roadthemes</span>   </div> </div>
+                          <li><a href="#" ><i class="ion-ios-star" ></i></a></li>
+                          <li><a href="#" ><i class="ion-ios-star" ></i></a></li>
+                          <li><a href="#" ><i class="ion-ios-star" ></i></a></li>
+                          <li><a href="#" ><i class="ion-ios-star" ></i></a></li>
+                          <li><a href="#" ><i class="ion-ios-star" ></i></a></li>
+                        </ul>
+                      </div>
+                        <p><strong>admin </strong>- September 12, 2018</p>
+                        <span>roadthemes</span>
                 </div>
-                <div class="comment_title"> <h2>Add a review</h2> <p>   Your email address will not be
+                </div>
+                </div>
+                <div class="comment_title"> <h2>Add a review</h2>
+                  <p>   Your email address will not be
                     published. Required fields are
                     marked
                   </p>
                 </div>
-                <div class="product_ratting mb-10"> <h3>Your rating</h3> <ul>   <li>     <a href="#"
-                      ><i
-                              class="fa fa-star"
-                      ></i
-                      ></a>   </li>   <li>     <a href="#"
-                      ><i
-                              class="fa fa-star"
-                      ></i
-                      ></a>   </li>   <li>     <a href="#"
-                      ><i
-                              class="fa fa-star"
-                      ></i
-                      ></a>   </li>   <li>     <a href="#"
-                      ><i
-                              class="fa fa-star"
-                      ></i
-                      ></a>   </li>   <li>     <a href="#"
-                      ><i
-                              class="fa fa-star"
-                      ></i
-                      ></a>   </li> </ul>
+                <div class="product_ratting mb-10"> <h3>Your rating</h3> <ul>
+                  <li><a href="#"><i class="fa fa-star"></i></a></li>
+                  <li><a href="#"><i class="fa fa-star"></i></a></li>
+                  <li><a href="#"><i class="fa fa-star"></i></a></li>
+                  <li><a href="#"><i class="fa fa-star"></i></a></li>
+                  <li><a href="#"><i class="fa fa-star"></i></a></li>
+                </ul>
                 </div>
-                <div class="product_review_form"> <form action="#">   <div class="row">     <div class="col-12">       <label             for="review_comment"
-                        >Your review
-                        </label>       <textarea
-                                name="comment"
-                                id="review_comment"
-                        ></textarea>     </div>     <div
-                              class="col-lg-6 col-md-6"
-                      >       <label for="author"
-                        >Name</label     >       <input
-                                id="author"
-                                type="text"
-                        />     </div>     <div
-                              class="col-lg-6 col-md-6"
-                      >       <label for="email"
-                        >Email     </label>       <input
-                                id="email"
-                                type="text"
-                        />     </div>   </div>   <button type="submit">     Submit
-                    </button> </form>
+                <div class="product_review_form">
+                  <form action="#">
+                    <div class="row">
+                      <div class="col-12">
+                        <label for="review_comment">Your review</label>
+                        <textarea name="comment" id="review_comment"></textarea>
+                      </div>
+                      <div class="col-lg-6 col-md-6">
+                        <label for="author">Name</label>
+                        <input id="author" type="text"/>
+                      </div>
+                      <div class="col-lg-6 col-md-6">
+                        <label for="email">Email</label>
+                        <input id="email" type="text"/>
+                      </div>
+                    </div>
+                    <button type="submit">Submit</button>
+                  </form>
                 </div>
               </div>
             </div>

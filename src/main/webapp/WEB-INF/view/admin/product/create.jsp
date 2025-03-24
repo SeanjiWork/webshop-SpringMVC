@@ -127,6 +127,16 @@
                 <form:select class="form-select" path="target.id" aria-label="Default select example">
                   <form:option value="1">Gaming PC</form:option>
                   <form:option value="2">Gaming Gear</form:option>
+                  <form:option value="3">Graphic Design</form:option>
+                  <form:option value="4">Office Computer</form:option>
+                  <form:option value="5">Student</form:option>
+                  <form:option value="6">PC Components</form:option>
+                  <form:option value="7">Peripherals</form:option>
+                  <form:option value="8">Storage Devices</form:option>
+                  <form:option value="9">Networking Devices</form:option>
+                  <form:option value="10">Accessories</form:option>
+                  <form:option value="11">Software Licenses</form:option>
+                  <form:option value="12">Services</form:option>
                 </form:select>
               </div>
 

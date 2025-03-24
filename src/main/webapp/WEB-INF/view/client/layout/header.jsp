@@ -16,9 +16,7 @@
         <div class="col-lg-8">
           <div class="top_right text-right">
             <ul>
-              <li class="currency">
-
-                <a href="#"><i class="fa fa-dollar"></i> US Dollar <i class="zmdi zmdi-caret-down"></i></a>
+              <li class="currency"><a href="#"><i class="fa fa-dollar"></i> US Dollar <i class="zmdi zmdi-caret-down"></i></a>
                 <ul class="dropdown_currency">
                   <li>
                     <a href="#">EUR – Euro</a></li>
@@ -28,9 +26,7 @@
                     <a href="#">INR – India Rupee</a></li>
                 </ul>
               </li>
-              <li class="language">
-
-                <a href="#"><i class="zmdi zmdi-dribbble"></i> English1 <i
+              <li class="language"><a href="#"><i class="zmdi zmdi-dribbble"></i> English1 <i
                         class="zmdi zmdi-caret-down"></i></a>
                 <ul class="dropdown_language">
                   <li>
@@ -39,9 +35,7 @@
                     <a href="#">Germany</a></li>
                 </ul>
               </li>
-              <li class="top_links">
-
-                <a href="#"><i class="zmdi zmdi-account"></i> My account <i
+              <li class="top_links"><a href="#"><i class="zmdi zmdi-account"></i> My account <i
                         class="zmdi zmdi-caret-down"></i></a>
                 <ul class="dropdown_links">
                   <li>
@@ -366,8 +360,7 @@
                           class="zmdi zmdi-caret-down"></i></a>
                   <div class="mega_menu">
                     <ul class="mega_menu_inner">
-                      <li>
-                        <a href="#">Shop Layouts</a>
+                      <li><a href="#">Shop Layouts</a>
                         <ul>
 <%--                          here--%>
                           <li><a href="/product/custom-build">Custom build</a></li>
@@ -378,8 +371,7 @@
                           <li><a href="/product/list">List View</a></li>
                         </ul>
                       </li>
-                      <li>
-                        <a href="#">other Pages</a>
+                      <li><a href="#">other Pages</a>
                         <ul>
                           <li><a href="cart.html">cart</a></li>
                           <li><a href="wishlist.html">Wishlist</a></li>
@@ -388,8 +380,7 @@
                           <li><a href="404.html">Error 404</a></li>
                         </ul>
                       </li>
-                      <li>
-                        <a href="#">Product Types</a>
+                      <li><a href="#">Product Types</a>
                         <ul>
                           <li><a href="product-details.html">product details</a></li>
                           <li><a href="product-sidebar.html">product sidebar</a></li>
@@ -478,9 +469,7 @@
 
           <div class="top_right">
             <ul>
-              <li class="currency">
-
-                <a href="#"><i class="fa fa-dollar"></i> US Dollar <i class="zmdi zmdi-caret-down"></i></a>
+              <li class="currency"><a href="#"><i class="fa fa-dollar"></i> US Dollar <i class="zmdi zmdi-caret-down"></i></a>
                 <ul class="dropdown_currency">
                   <li>
                     <a href="#">EUR – Euro</a></li>
@@ -490,9 +479,7 @@
                     <a href="#">INR – India Rupee</a></li>
                 </ul>
               </li>
-              <li class="language">
-
-                <a href="#"><i class="zmdi zmdi-dribbble"></i> English1 <i
+              <li class="language"><a href="#"><i class="zmdi zmdi-dribbble"></i> English1 <i
                         class="zmdi zmdi-caret-down"></i></a>
                 <ul class="dropdown_language">
                   <li>
@@ -501,9 +488,7 @@
                     <a href="#">Germany</a></li>
                 </ul>
               </li>
-              <li class="top_links">
-
-                <a href="#"><i class="zmdi zmdi-account"></i> My account <i
+              <li class="top_links"><a href="#"><i class="zmdi zmdi-account"></i> My account <i
                         class="zmdi zmdi-caret-down"></i></a>
                 <ul class="dropdown_links">
                   <li>
@@ -599,63 +584,43 @@
           </div>
           <div id="menu" class="text-left">
             <ul class="offcanvas_main_menu">
-              <li class="menu-item-has-children active">
-
-                <a href="#">Home</a>
+              <li class="menu-item-has-children active"><a href="#">Home</a>
 
               </li>
-              <li class="menu-item-has-children">
-
-                <a href="#">Shop</a>
+              <li class="menu-item-has-children"><a href="#">Shop</a>
                 <ul class="sub-menu">
                   <li class="menu-item-has-children">
                     <a href="#">Shop Layouts</a>
                     <ul class="sub-menu">
-                      <li>
-                        <a href ="/product/list">Full Width</a>     </li>
-                      <li>
-                        <a href ="/product/list">Full Width list</a>     </li>
-                      <li>
-                        <a href ="/product/list">Right Sidebar       </a>     </li>
-                      <li>
-                        <a href ="/product/list"> Right Sidebar list</a>     </li>
-                      <li>
-                        <a href="/product/list">List View</a></li>
+                      <li><a href ="/product/list">Full Width</a>     </li>
+                      <li><a href ="/product/list">Full Width list</a>     </li>
+                      <li><a href ="/product/list">Right Sidebar       </a>     </li>
+                      <li><a href ="/product/list"> Right Sidebar list</a>     </li>
+                      <li><a href="/product/list">List View</a></li>
                     </ul>
                   </li>
                   <li class="menu-item-has-children">
                     <a href="#">other Pages</a>
                     <ul class="sub-menu">
-                      <li>
-                        <a href="#">cart</a></li>
-                      <li>
-                        <a href="#">Wishlist</a></li>
-                      <li>
-                        <a href="#">Checkout</a></li>
-                      <li>
-                        <a href ="#">my account</a>     </li>
-                      <li>
-                        <a href="#">Error 404</a></li>
+                      <li><a href="#">cart</a></li>
+                      <li><a href="#">Wishlist</a></li>
+                      <li><a href="#">Checkout</a></li>
+                      <li><a href ="#">my account</a>     </li>
+                      <li><a href="#">Error 404</a></li>
                     </ul>
                   </li>
                   <li class="menu-item-has-children">
                     <a href="#">Product Types</a>
                     <ul class="sub-menu">
-                      <li>
-                        <a href ="#">product details</a>     </li>
-                      <li>
-                        <a href ="#">product sidebar</a>     </li>
-                      <li>
-                        <a href ="#">product grouped</a>     </li>
-                      <li>
-                        <a href ="#">product variable</a>     </li>
+                      <li><a href ="#">product details</a>     </li>
+                      <li><a href ="#">product sidebar</a>     </li>
+                      <li><a href ="#">product grouped</a>     </li>
+                      <li><a href ="#">product variable</a>     </li>
                     </ul>
                   </li>
                 </ul>
               </li>
-              <li class="menu-item-has-children">
-
-                <a href="#">blog</a>
+              <li class="menu-item-has-children"><a href="#">blog</a>
                 <ul class="sub-menu">
                   <li>
                     <a href="#">blog</a></li>
@@ -667,9 +632,7 @@
                     <a href="#">blog sidebar</a></li>
                 </ul>
               </li>
-              <li class="menu-item-has-children">
-
-                <a href="#">pages </a>
+              <li class="menu-item-has-children"><a href="#">pages </a>
                 <ul class="sub-menu">
                   <li>
                     <a href="#">About Us</a></li>
@@ -689,46 +652,29 @@
                     <a href="#">Error 404</a></li>
                 </ul>
               </li>
-              <li class="menu-item-has-children">
-
-                <a href="#">my account</a>
+              <li class="menu-item-has-children"><a href="#">my account</a>
               </li>
-              <li class="menu-item-has-children">
-
-                <a href="#">about Us</a>
+              <li class="menu-item-has-children"><a href="#">about Us</a>
               </li>
-              <li class="menu-item-has-children">
-
-                <a href="#"> Contact Us</a>
+              <li class="menu-item-has-children"><a href="#"> Contact Us</a>
               </li>
             </ul>
           </div>
 
           <div class="Offcanvas_footer">
             <span>
-
-<a href="#"><i class="fa fa-envelope-o"></i>info@yourdomain.com</a>
+              <a href="#"><i class="fa fa-envelope-o"></i>info@yourdomain.com</a>
             </span>
             <ul>
-              <li class="facebook">
-
-                <a href="#"><i class="fa fa-facebook"></i></a>
+              <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a>
               </li>
-              <li class="twitter">
-
-                <a href="#"><i class="fa fa-twitter"></i></a>
+              <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a>
               </li>
-              <li class="pinterest">
-
-                <a href="#"><i class="fa fa-pinterest-p"></i></a>
+              <li class="pinterest"><a href="#"><i class="fa fa-pinterest-p"></i></a>
               </li>
-              <li class="google-plus">
-
-                <a href="#"><i class="fa fa-google-plus"></i></a>
+              <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a>
               </li>
-              <li class="linkedin">
-
-                <a href="#"><i class="fa fa-linkedin"></i></a>
+              <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a>
               </li>
             </ul>
           </div>
@@ -792,7 +738,7 @@
             </div>
             <div class="category_product_name">
               <h2>
-                <a href="shop.html">Màn hình</a></h2>
+                <a href="/product/custom-build">Tự build PC</a></h2>
             </div>
           </div>
           <div class="single_category_product">

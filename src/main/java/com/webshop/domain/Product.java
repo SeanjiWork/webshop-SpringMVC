@@ -34,7 +34,7 @@ public class Product extends BaseEntity {
 
     private String image;
     private String url;
-    private Integer status = 1;
+    private Integer status = 0;
    
     @NotNull
     @Min(value = 1, message = "Quantity must be at least 1")
