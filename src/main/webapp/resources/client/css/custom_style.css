@@ -91,21 +91,68 @@ body {
     padding: 5px 10px;
 }
 
+.table_desc .cart_page table tbody tr td.product_remove a {
+    color: #e30019;
+}
+
+.table_desc .cart_page table thead tr th {
+    border-bottom: 3px solid #e30019;
+}
+
+.table_desc .cart_page table tbody tr td.product_name a:hover {
+    color: #e30019;
+}
+
+.cart_submit button:hover {
+    background: #e30019;
+}
+
+.coupon_inner button:hover {
+    background: #e30019;
+}
+
+.checkout_btn a {
+    background: #e30019;
+}
+
+.coupon_inner a {
+    color: #ffffff;
+}
+
 .btn-danger {
     border-radius: 5px;
 }
 
+.save_button button {
+    color: #e30019;
+}
+
+.dashboard_content a {
+    color: #e30019;
+}
+
+.table-responsive table tbody tr td:last-child a {
+    color: #e30019;
+}
+
+.dashboard_content p a {
+    color: #e30019;
+}
+
+.dashboard_tab_button ul li a.active {
+    background: #e30019;
+}
+
+.dashboard_tab_button ul li a:hover {
+    background: #e30019;
+}
+
+.login_submit a:hover {
+    color: #e30019;
+}
+
 .modal_price span {
     color: #e30019;
-}
-
-.alarm_icone i {
-    color: #e30019;
-}
-
-.deals_product_carousel .owl-nav>*:hover {
-    background: #e30019 !important;
-    border-color: #e30019 !important;
 }
 
 .modal_add_to_cart form button:hover {

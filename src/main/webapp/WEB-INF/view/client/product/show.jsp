@@ -30,7 +30,7 @@
 </head>
 <body>
 <%--Header--%>
-<jsp:include page="../layout/header-full.jsp"/>
+<jsp:include page="../layout/header.jsp"/>
 
 <%-- Start Content List Products--%>
 
@@ -60,39 +60,20 @@
                 <!--sidebar widget start-->
                 <aside class="sidebar_widget">
                     <div class="shop_sidebar_banner mb-50">
-                        <a href="#"
-                        ><img
-                                src="/client/img/bg/banner16.jpg"
-                                alt=""
-                        /></a>
+                        <a href="#"><img src="/client/img/bg/banner16.jpg" alt=""/></a>
                     </div>
                     <div class="widget_list widget_categories">
                         <h2>categories</h2>
                         <ul>
-                            <li>
-                                <a href="#"
-                                >Categories1 <span>(6)</span></a
-                                >
+                            <li><a href="#">Categories1 <span>(6)</span></a>
                             </li>
-                            <li>
-                                <a href="#"
-                                >Categories2 <span>(10)</span></a
-                                >
+                            <li><a href="#">Categories2 <span>(10)</span></a>
                             </li>
-                            <li>
-                                <a href="#"
-                                >Categories3 <span>(4)</span></a
-                                >
+                            <li><a href="#">Categories3 <span>(4)</span></a>
                             </li>
-                            <li>
-                                <a href="#"
-                                >Categories4 <span>(10)</span></a
-                                >
+                            <li><a href="#">Categories4 <span>(10)</span></a>
                             </li>
-                            <li>
-                                <a href="#"
-                                >Categories5 <span>(8)</span></a
-                                >
+                            <li><a href="#">Categories5 <span>(8)</span></a>
                             </li>
                         </ul>
                     </div>
@@ -112,48 +93,30 @@
                     <div class="widget_list">
                         <h2>Manufacturer</h2>
                         <ul>
-                            <li>
-                                <a href="#"
-                                >Brake Parts <span>(6)</span></a
-                                >
+                            <li><a href="#">Brake Parts <span>(6)</span></a>
                             </li>
-                            <li>
-                                <a href="#"
-                                >Accessories <span>(10)</span></a
-                                >
+                            <li><a href="#">Accessories <span>(10)</span></a>
                             </li>
-                            <li>
-                                <a href="#"
-                                >Engine Parts <span>(4)</span></a
-                                >
+                            <li><a href="#">Engine Parts <span>(4)</span></a>
                             </li>
-                            <li>
-                                <a href="#">hermes <span>(10)</span></a>
+                            <li><a href="#">hermes <span>(10)</span></a>
                             </li>
-                            <li>
-                                <a href="#"
-                                >louis vuitton <span>(8)</span></a
-                                >
+                            <li><a href="#">louis vuitton <span>(8)</span></a>
                             </li>
                         </ul>
                     </div>
                     <div class="widget_list">
                         <h2>Select By Color</h2>
                         <ul>
-                            <li>
-                                <a href="#">Black <span>(6)</span></a>
+                            <li><a href="#">Black <span>(6)</span></a>
                             </li>
-                            <li>
-                                <a href="#"> Blue <span>(8)</span></a>
+                            <li><a href="#"> Blue <span>(8)</span></a>
                             </li>
-                            <li>
-                                <a href="#">Brown <span>(10)</span></a>
+                            <li><a href="#">Brown <span>(10)</span></a>
                             </li>
-                            <li>
-                                <a href="#"> Green <span>(6)</span></a>
+                            <li><a href="#"> Green <span>(6)</span></a>
                             </li>
-                            <li>
-                                <a href="#">Pink <span>(4)</span></a>
+                            <li><a href="#">Pink <span>(4)</span></a>
                             </li>
                         </ul>
                     </div>
@@ -174,20 +137,15 @@
                                     <div class="product_rating">
                                         <ul>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                         </ul>
                                     </div>
                                     <div class="price_box">
@@ -210,20 +168,15 @@
                                     <div class="product_rating">
                                         <ul>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                         </ul>
                                     </div>
                                     <div class="price_box">
@@ -246,20 +199,15 @@
                                     <div class="product_rating">
                                         <ul>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                         </ul>
                                     </div>
                                     <div class="price_box">
@@ -282,20 +230,15 @@
                                     <div class="product_rating">
                                         <ul>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                         </ul>
                                     </div>
                                     <div class="price_box">
@@ -318,20 +261,15 @@
                                     <div class="product_rating">
                                         <ul>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                         </ul>
                                     </div>
                                     <div class="price_box">
@@ -354,20 +292,15 @@
                                     <div class="product_rating">
                                         <ul>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                         </ul>
                                     </div>
                                     <div class="price_box">
@@ -390,20 +323,15 @@
                                     <div class="product_rating">
                                         <ul>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                         </ul>
                                     </div>
                                     <div class="price_box">
@@ -426,20 +354,15 @@
                                     <div class="product_rating">
                                         <ul>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                         </ul>
                                     </div>
                                     <div class="price_box">
@@ -479,20 +402,15 @@
                                     <div class="product_rating">
                                         <ul>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                         </ul>
                                     </div>
                                     <div class="price_box">
@@ -515,20 +433,15 @@
                                     <div class="product_rating">
                                         <ul>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                         </ul>
                                     </div>
                                     <div class="price_box">
@@ -551,20 +464,15 @@
                                     <div class="product_rating">
                                         <ul>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                             <li>
-                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a>
-                                            </li>
+                                                <a href="#" ><i class="zmdi zmdi-star-outline" ></i></a></li>
                                         </ul>
                                     </div>
                                     <div class="price_box">
@@ -647,10 +555,7 @@
                     <div class="col-12">
                         <div class="single_product">
                             <div class="product_thumb">
-                                <a href="product-details.html"
-                                ><img src="/client/img/product/product15.jpg"
-                                        alt=""
-                                /></a>
+                                <a href="product-details.html"><img src="/client/img/product/product15.jpg" alt="" /></a>
                                 <div class="label_product">
                                     <span class="label_sale">sale</span>
                                 </div>
@@ -692,8 +597,7 @@
                                 </div>
                                 <div class="price_box">
                                             <span class="current_price" >$65.00</span>
-                                    <span class="old_price"
-                                    >$70.00</span>
+                                    <span class="old_price">$70.00</span>
                                 </div>
                                 <div class="action_links">
                                     <ul>
@@ -740,8 +644,7 @@
                                 </div>
                                 <div class="price_box">
                                             <span class="current_price" >$65.00</span>
-                                    <span class="old_price"
-                                    >$70.00</span>
+                                    <span class="old_price">$70.00</span>
                                 </div>
                                 <div class="action_links">
                                     <ul>
@@ -777,10 +680,7 @@
                     <div class="col-12">
                         <div class="single_product">
                             <div class="product_thumb">
-                                <a href="product-details.html"
-                                ><img src="/client/img/product/product16.jpg"
-                                        alt=""
-                                /></a>
+                                <a href="product-details.html"><img src="/client/img/product/product16.jpg" alt="" /></a>
                                 <div class="label_product">
                                     <span class="label_sale">sale</span>
                                 </div>
@@ -822,8 +722,7 @@
                                 </div>
                                 <div class="price_box">
                                             <span class="current_price" >$65.00</span>
-                                    <span class="old_price"
-                                    >$70.00</span>
+                                    <span class="old_price">$70.00</span>
                                 </div>
                                 <div class="action_links">
                                     <ul>
@@ -870,8 +769,7 @@
                                 </div>
                                 <div class="price_box">
                                             <span class="current_price" >$65.00</span>
-                                    <span class="old_price"
-                                    >$70.00</span>
+                                    <span class="old_price">$70.00</span>
                                 </div>
                                 <div class="action_links">
                                     <ul>
@@ -907,10 +805,7 @@
                     <div class="col-12">
                         <div class="single_product">
                             <div class="product_thumb">
-                                <a href="product-details.html"
-                                ><img src="/client/img/product/product17.jpg"
-                                        alt=""
-                                /></a>
+                                <a href="product-details.html"><img src="/client/img/product/product17.jpg" alt="" /></a>
                                 <div class="label_product">
                                     <span class="label_sale">sale</span>
                                 </div>
@@ -952,8 +847,7 @@
                                 </div>
                                 <div class="price_box">
                                             <span class="current_price" >$65.00</span>
-                                    <span class="old_price"
-                                    >$70.00</span>
+                                    <span class="old_price">$70.00</span>
                                 </div>
                                 <div class="action_links">
                                     <ul>
@@ -999,9 +893,8 @@
                                     </ul>
                                 </div>
                                 <div class="price_box">
-                                            <span class="current_price" >$65.00</span>
-                                    <span class="old_price"
-                                    >$70.00</span>
+                                    <span class="current_price" >$65.00</span>
+                                    <span class="old_price">$70.00</span>
                                 </div>
                                 <div class="action_links">
                                     <ul>

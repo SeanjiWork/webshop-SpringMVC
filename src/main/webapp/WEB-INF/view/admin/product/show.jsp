@@ -1,6 +1,15 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: vuminhduc
+  Date: 6/3/25
+  Time: 22:40
+  To change this template use File | Settings | File Templates.
+--%>
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
+<%@ taglib  prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -73,10 +82,16 @@
                 <tr>
                   <th scope="row">${product.id}</th>
                   <td>${product.name}</td>
-                  <td>${product.price}</td>
+                  <td>
+                    <span>
+                      <fmt:formatNumber type="number" value="${product.price}" /> đ
+                    </span>
+                  </td>
                   <td>${product.shortDescription}</td>
                   <td>${product.quantity}</td>
-                  <td>${product.image}</td>
+                  <td>
+                    <img style="width: 100px; height: 100px" src="/images/product/${product.image}" alt="Card image cap">
+                  </td>
                   <td>
                     <a href="/admin/product/${product.id}" class="btn btn-outline-success">View</a>
                     <a href="/admin/product/update/${product.id}" class="btn btn-outline-warning">Update</a>

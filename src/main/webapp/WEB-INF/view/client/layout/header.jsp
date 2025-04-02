@@ -2,6 +2,21 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const menu = document.querySelector(".categories_menu_toggle");
+    const toggleBtn = document.querySelector(".categori_toggle");
+
+    if (window.location.pathname === "/" || window.location.pathname.includes("index.html")) {
+      menu.style.display = "block";
+    }
+
+    toggleBtn.addEventListener("click", function () {
+      menu.style.display = menu.style.display === "block" ? "none" : "block";
+    });
+  });
+</script>
+
 <!--header area start-->
 <header class="header_area">
   <!--header top start-->
@@ -18,34 +33,26 @@
             <ul>
               <li class="currency"><a href="#"><i class="fa fa-dollar"></i> US Dollar <i class="zmdi zmdi-caret-down"></i></a>
                 <ul class="dropdown_currency">
-                  <li>
-                    <a href="#">EUR – Euro</a></li>
-                  <li>
-                    <a href="#">GBP – British Pound</a></li>
-                  <li>
-                    <a href="#">INR – India Rupee</a></li>
+                  <li><a href="#">EUR – Euro</a></li>
+                  <li><a href="#">GBP – British Pound</a></li>
+                  <li><a href="#">INR – India Rupee</a></li>
                 </ul>
               </li>
               <li class="language"><a href="#"><i class="zmdi zmdi-dribbble"></i> English1 <i
                         class="zmdi zmdi-caret-down"></i></a>
                 <ul class="dropdown_language">
-                  <li>
-                    <a href="#">English</a></li>
-                  <li>
-                    <a href="#">Germany</a></li>
+                  <li><a href="#">English</a></li>
+                  <li><a href="#">Germany</a></li>
                 </ul>
               </li>
               <li class="top_links"><a href="#"><i class="zmdi zmdi-account"></i> My account <i
                         class="zmdi zmdi-caret-down"></i></a>
                 <ul class="dropdown_links">
-                  <li>
-                    <a href="#">Checkout </a></li>
-                  <li>
-                    <a href="#">My Account </a></li>
-                  <li>
-                    <a href="#">Shopping Cart</a></li>
-                  <li>
-                    <a href="#">Wishlist</a></li>
+                  <li><a href="/checkout">Checkout </a></li>
+                  <li><a href="/my-account">My Account </a></li>
+                  <li><a href="/cart">Shopping Cart</a></li>
+                  <li><a href="#">Wishlist</a></li>
+                  <li><a href="/login">Login</a></li>
                 </ul>
               </li>
             </ul>
@@ -61,9 +68,7 @@
       <div class="row align-items-center">
         <div class="col-lg-3">
           <div class="logo">
-            <a href="/"
-            ><img src="client/img/logo/logo.png" alt=""
-            /></a>
+            <a href="/"><img src="client/img/logo/logo.png" alt=""/></a>
           </div>
         </div>
         <div class="col-lg-9">
@@ -103,7 +108,8 @@
               <div class="mini_cart">
                 <div class="cart_item">
                   <div class="cart_img">
-                    <a href="#"><img src="client/img/s-product/product.jpg" alt=""/></a></div>
+                    <a href="#"><img src="client/img/s-product/product.jpg" alt=""/></a>
+                  </div>
                   <div class="cart_info">
                     <a href="#">Condimentum Watches</a>
                     <span class="quantity">Qty: 1</span> <span class="price_cart">$60.00</span>
@@ -127,8 +133,8 @@
 
                 <div class="mini_cart_footer">
                   <div class="cart_button">
-                    <a href="#">View cart</a>
-                    <a href="#">Checkout</a></div>
+                    <a href="/cart">View cart</a>
+                    <a href="/checkout">Checkout</a></div>
                 </div>
               </div>
               <!--mini cart end-->
@@ -149,69 +155,55 @@
             <div class="categories_title">
               <h2 class="categori_toggle">Categories</h2>
             </div>
-            <div class="categories_menu_toggle">
+            <div class="categories_menu_toggle" style="display: none">
               <ul>
                 <li class="menu_item_children categorie_list">
-                  <a href="#"><span><i class="zmdi zmdi-desktop-mac"></i></span> Electronic <i
-                          class="fa fa-angle-right"></i></a>
+                  <a href="#"><span><i class="zmdi zmdi-desktop-mac"></i></span>
+                    Electronic <i class="fa fa-angle-right"></i>
+                  </a>
                   <ul class="categories_mega_menu">
                     <li class="menu_item_children">
                       <a href="#">Wheel Bearings</a>
                       <ul class="categorie_sub_menu">
-                        <li>
-                          <a href="#">Bower</a></li>
-                        <li>
-                          <a href="#">Flipbac</a></li>
-                        <li>
-                          <a href="#">Gary Fong</a></li>
-                        <li>
-                          <a href="#">GigaPan</a></li>
+                        <li><a href="#">Bower</a></li>
+                        <li><a href="#">Flipbac</a></li>
+                        <li><a href="#">Gary Fong</a></li>
+                        <li><a href="#">GigaPan</a></li>
                       </ul>
                     </li>
                     <li class="menu_item_children">
                       <a href="#">Wheel Rim Screws</a>
                       <ul class="categorie_sub_menu">
-                        <li>
-                          <a href="#">Accessories</a></li>
-                        <li>
-                          <a href="#">2-Stroke</a></li>
-                        <li>
-                          <a href="#">Handbag</a></li>
-                        <li>
-                          <a href="#">Clothing</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">2-Stroke</a></li>
+                        <li><a href="#">Handbag</a></li>
+                        <li><a href="#">Clothing</a></li>
                       </ul>
                     </li>
                     <li class="menu_item_children last_child">
                       <a href="#">Wheel Simulators</a>
                       <ul class="categorie_sub_menu">
-                        <li>
-                          <a href="#">Bags & Cases</a></li>
-                        <li>
-                          <a href="#">Binoculars & Scopes</a></li>
-                        <li>
-                          <a href="#">Film Photography</a></li>
-                        <li>
-                          <a href="#">Lighting & Studio</a></li>
+                        <li><a href="#">Bags & Cases</a></li>
+                        <li><a href="#">Binoculars & Scopes</a></li>
+                        <li><a href="#">Film Photography</a></li>
+                        <li><a href="#">Lighting & Studio</a></li>
                       </ul>
                     </li>
                   </ul>
                 </li>
                 <li class="menu_item_children">
-                  <a href="#"><span><i class="zmdi zmdi-image"></i></span> Fashion & Beauty <i
-                          class="fa fa-angle-right"></i></a>
+                  <a href="#"><span><i class="zmdi zmdi-image"></i>
+                  </span> Fashion & Beauty <i class="fa fa-angle-right"></i>
+                  </a>
                   <ul class="categories_mega_menu column_3">
                     <li class="menu_item_children">
                       <a href="#">Chair</a>
                       <div class="categorie_sub_menu">
                         <ul>
-                          <li>
-                            <a href="#">Dining room</a></li>
-                          <li>
-                            <a href="#">bedroom</a></li>
-                          <li>
-                            <a href="#"> Home & Office</a></li>
-                          <li>
-                            <a href="#">living room</a></li>
+                          <li><a href="#">Dining room</a></li>
+                          <li><a href="#">bedroom</a></li>
+                          <li><a href="#"> Home & Office</a></li>
+                          <li><a href="#">living room</a></li>
                         </ul>
                       </div>
                     </li>
@@ -219,14 +211,10 @@
                       <a href="#">Lighting</a>
                       <div class="categorie_sub_menu">
                         <ul>
-                          <li>
-                            <a href="#">Ceiling Lighting</a></li>
-                          <li>
-                            <a href="#">Wall Lighting</a></li>
-                          <li>
-                            <a href="#">Outdoor Lighting</a></li>
-                          <li>
-                            <a href="#">Smart Lighting</a></li>
+                          <li><a href="#">Ceiling Lighting</a></li>
+                          <li><a href="#">Wall Lighting</a></li>
+                          <li><a href="#">Outdoor Lighting</a></li>
+                          <li><a href="#">Smart Lighting</a></li>
                         </ul>
                       </div>
                     </li>
@@ -234,14 +222,10 @@
                       <a href="#">Sofa</a>
                       <div class="categorie_sub_menu">
                         <ul>
-                          <li>
-                            <a href="#">Fabric Sofas</a></li>
-                          <li>
-                            <a href="#">Leather Sofas</a></li>
-                          <li>
-                            <a href="#">Corner Sofas</a></li>
-                          <li>
-                            <a href="#">Sofa Beds</a></li>
+                          <li><a href="#">Fabric Sofas</a></li>
+                          <li><a href="#">Leather Sofas</a></li>
+                          <li><a href="#">Corner Sofas</a></li>
+                          <li><a href="#">Sofa Beds</a></li>
                         </ul>
                       </div>
                     </li>
@@ -255,14 +239,10 @@
                       <a href="#">Brake Tools</a>
                       <div class="categorie_sub_menu">
                         <ul>
-                          <li>
-                            <a href="#">Driveshafts</a></li>
-                          <li>
-                            <a href="#">Spools</a></li>
-                          <li>
-                            <a href="#">Diesel </a></li>
-                          <li>
-                            <a href="#">Gasoline</a></li>
+                          <li><a href="#">Driveshafts</a></li>
+                          <li><a href="#">Spools</a></li>
+                          <li><a href="#">Diesel </a></li>
+                          <li><a href="#">Gasoline</a></li>
                         </ul>
                       </div>
                     </li>
@@ -270,35 +250,28 @@
                       <a href="#">Emergency Brake</a>
                       <div class="categorie_sub_menu">
                         <ul>
-                          <li>
-                            <a href="#">Dolls for Girls</a></li>
-                          <li>
-                            <a href="#">Girls' Learning Toys</a></li>
-                          <li>
-                            <a href="#">Arts and Crafts for Girls</a></li>
-                          <li>
-                            <a href="#">Video Games for Girls</a></li>
+                          <li><a href="#">Dolls for Girls</a></li>
+                          <li><a href="#">Girls' Learning Toys</a></li>
+                          <li><a href="#">Arts and Crafts for Girls</a></li>
+                          <li><a href="#">Video Games for Girls</a></li>
                         </ul>
                       </div>
                     </li>
                   </ul>
                 </li>
                 <li class="menu_item_children">
-                  <a href="#"><span><i class="zmdi zmdi-dribbble"></i></span> Sport & Outdoor <i
-                          class="fa fa-angle-right"></i></a>
+                  <a href="#"><span><i class="zmdi zmdi-dribbble"></i></span> Sport & Outdoor
+                    <i class="fa fa-angle-right"></i>
+                  </a>
                   <ul class="categories_mega_menu column_2">
                     <li class="menu_item_children">
                       <a href="#">Check Trousers</a>
                       <div class="categorie_sub_menu">
                         <ul>
-                          <li>
-                            <a href="#">Building</a></li>
-                          <li>
-                            <a href="#">Electronics</a></li>
-                          <li>
-                            <a href="#">action figures </a></li>
-                          <li>
-                            <a href="#">specialty & boutique toy</a></li>
+                          <li><a href="#">Building</a></li>
+                          <li><a href="#">Electronics</a></li>
+                          <li><a href="#">action figures </a></li>
+                          <li><a href="#">specialty & boutique toy</a></li>
                         </ul>
                       </div>
                     </li>
@@ -306,14 +279,10 @@
                       <a href="#">Calculators</a>
                       <div class="categorie_sub_menu">
                         <ul>
-                          <li>
-                            <a href="#">Dolls for Girls</a></li>
-                          <li>
-                            <a href="#">Girls' Learning Toys</a></li>
-                          <li>
-                            <a href="#">Arts and Crafts for Girls</a></li>
-                          <li>
-                            <a href="#">Video Games for Girls</a></li>
+                          <li><a href="#">Dolls for Girls</a></li>
+                          <li><a href="#">Girls' Learning Toys</a></li>
+                          <li><a href="#">Arts and Crafts for Girls</a></li>
+                          <li><a href="#">Video Games for Girls</a></li>
                         </ul>
                       </div>
                     </li>
@@ -341,8 +310,7 @@
                   <a href="#">Sleight Sofas</a>
                 </li>
                 <li>
-                  <a href="#" id="more-btn"><i class="fa fa-plus" aria-hidden="true"></i> More
-                    Categories</a>
+                  <a href="#" id="more-btn"><i class="fa fa-plus" aria-hidden="true"></i> More Categories</a>
                 </li>
               </ul>
             </div>
@@ -362,7 +330,7 @@
                     <ul class="mega_menu_inner">
                       <li><a href="#">Shop Layouts</a>
                         <ul>
-<%--                          here--%>
+                          <%--here--%>
                           <li><a href="/product/custom-build">Custom build</a></li>
                           <li><a href="#">Full Width list</a></li>
                           <li><a href="#">Right Sidebar </a></li>
@@ -373,9 +341,9 @@
                       </li>
                       <li><a href="#">other Pages</a>
                         <ul>
-                          <li><a href="cart.html">cart</a></li>
+                          <li><a href="/cart">cart</a></li>
                           <li><a href="wishlist.html">Wishlist</a></li>
-                          <li><a href="checkout.html">Checkout</a></li>
+                          <li><a href="/checkout">Checkout</a></li>
                           <li><a href="my-account.html">my account</a></li>
                           <li><a href="404.html">Error 404</a></li>
                         </ul>
@@ -407,7 +375,7 @@
                           class="zmdi zmdi-caret-down"></i></a>
                   <ul class="sub_menu pages">
                     <li>
-                      <a href="about.html">About Us</a></li>
+                      <a href="/about">About Us</a></li>
                     <li>
                       <a href="services.html">services</a></li>
                     <li>
@@ -415,7 +383,7 @@
                     <li>
                       <a href="faq.html">Frequently Questions</a></li>
                     <li>
-                      <a href="contact.html">contact</a></li>
+                      <a href="/contact">contact</a></li>
                     <li>
                       <a href="login.html">login</a></li>
                     <li>
@@ -426,10 +394,10 @@
                 </li>
 
                 <li>
-                  <a href="about.html"><i class="zmdi zmdi-comments"></i> about Us</a>
+                  <a href="/about"><i class="zmdi zmdi-comments"></i> about Us</a>
                 </li>
                 <li>
-                  <a href="contact.html"><i class="zmdi zmdi-account-box-mail"></i> Contact Us</a>
+                  <a href="/contact"><i class="zmdi zmdi-account-box-mail"></i> Contact Us</a>
                 </li>
               </ul>
             </nav>
@@ -471,34 +439,25 @@
             <ul>
               <li class="currency"><a href="#"><i class="fa fa-dollar"></i> US Dollar <i class="zmdi zmdi-caret-down"></i></a>
                 <ul class="dropdown_currency">
-                  <li>
-                    <a href="#">EUR – Euro</a></li>
-                  <li>
-                    <a href="#">GBP – British Pound</a></li>
-                  <li>
-                    <a href="#">INR – India Rupee</a></li>
+                  <li><a href="#">EUR – Euro</a></li>
+                  <li><a href="#">GBP – British Pound</a></li>
+                  <li><a href="#">INR – India Rupee</a></li>
                 </ul>
               </li>
               <li class="language"><a href="#"><i class="zmdi zmdi-dribbble"></i> English1 <i
                         class="zmdi zmdi-caret-down"></i></a>
                 <ul class="dropdown_language">
-                  <li>
-                    <a href="#">English</a></li>
-                  <li>
-                    <a href="#">Germany</a></li>
+                  <li><a href="#">English</a></li>
+                  <li><a href="#">Germany</a></li>
                 </ul>
               </li>
               <li class="top_links"><a href="#"><i class="zmdi zmdi-account"></i> My account <i
                         class="zmdi zmdi-caret-down"></i></a>
                 <ul class="dropdown_links">
-                  <li>
-                    <a href="checkout.html">Checkout </a></li>
-                  <li>
-                    <a href="my-account.html">My Account </a></li>
-                  <li>
-                    <a href="cart.html">Shopping Cart</a></li>
-                  <li>
-                    <a href="wishlist.html">Wishlist</a></li>
+                  <li><a href="/checkout">Checkout </a></li>
+                  <li><a href="my-account.html">My Account </a></li>
+                  <li><a href="/cart">Shopping Cart</a></li>
+                  <li><a href="wishlist.html">Wishlist</a></li>
                 </ul>
               </li>
             </ul>
@@ -576,7 +535,7 @@
               <div class="mini_cart_footer">
                 <div class="cart_button">
                   <a href="cart.html">View cart</a>
-                  <a href="checkout.html">Checkout</a>
+                  <a href="/checkout">Checkout</a>
                 </div>
               </div>
             </div>
@@ -592,10 +551,10 @@
                   <li class="menu-item-has-children">
                     <a href="#">Shop Layouts</a>
                     <ul class="sub-menu">
-                      <li><a href ="/product/list">Full Width</a>     </li>
-                      <li><a href ="/product/list">Full Width list</a>     </li>
-                      <li><a href ="/product/list">Right Sidebar       </a>     </li>
-                      <li><a href ="/product/list"> Right Sidebar list</a>     </li>
+                      <li><a href ="/product/list">Full Width</a></li>
+                      <li><a href ="/product/list">Full Width list</a></li>
+                      <li><a href ="/product/list">Right Sidebar</a></li>
+                      <li><a href ="/product/list"> Right Sidebar list</a></li>
                       <li><a href="/product/list">List View</a></li>
                     </ul>
                   </li>
@@ -604,57 +563,45 @@
                     <ul class="sub-menu">
                       <li><a href="#">cart</a></li>
                       <li><a href="#">Wishlist</a></li>
-                      <li><a href="#">Checkout</a></li>
-                      <li><a href ="#">my account</a>     </li>
+                      <li><a href="/checkout">Checkout</a></li>
+                      <li><a href ="#">my account</a></li>
                       <li><a href="#">Error 404</a></li>
                     </ul>
                   </li>
                   <li class="menu-item-has-children">
                     <a href="#">Product Types</a>
                     <ul class="sub-menu">
-                      <li><a href ="#">product details</a>     </li>
-                      <li><a href ="#">product sidebar</a>     </li>
-                      <li><a href ="#">product grouped</a>     </li>
-                      <li><a href ="#">product variable</a>     </li>
+                      <li><a href ="#">product details</a></li>
+                      <li><a href ="#">product sidebar</a></li>
+                      <li><a href ="#">product grouped</a></li>
+                      <li><a href ="#">product variable</a></li>
                     </ul>
                   </li>
                 </ul>
               </li>
               <li class="menu-item-has-children"><a href="#">blog</a>
                 <ul class="sub-menu">
-                  <li>
-                    <a href="#">blog</a></li>
-                  <li>
-                    <a href="#">blog details</a></li>
-                  <li>
-                    <a href="#">blog fullwidth</a></li>
-                  <li>
-                    <a href="#">blog sidebar</a></li>
+                  <li><a href="#">blog</a></li>
+                  <li><a href="#">blog details</a></li>
+                  <li><a href="#">blog fullwidth</a></li>
+                  <li><a href="#">blog sidebar</a></li>
                 </ul>
               </li>
               <li class="menu-item-has-children"><a href="#">pages </a>
                 <ul class="sub-menu">
-                  <li>
-                    <a href="#">About Us</a></li>
-                  <li>
-                    <a href="#l">services</a></li>
-                  <li>
-                    <a href="#l">portfolio</a></li>
-                  <li>
-                    <a href="#">Frequently Questions</a></li>
-                  <li>
-                    <a href="#">contact</a></li>
-                  <li>
-                    <a href="#">login</a></li>
-                  <li>
-                    <a href="#">Wishlist</a></li>
-                  <li>
-                    <a href="#">Error 404</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#l">services</a></li>
+                  <li><a href="#l">portfolio</a></li>
+                  <li><a href="#">Frequently Questions</a></li>
+                  <li><a href="#">contact</a></li>
+                  <li><a href="#">login</a></li>
+                  <li><a href="#">Wishlist</a></li>
+                  <li><a href="#">Error 404</a></li>
                 </ul>
               </li>
               <li class="menu-item-has-children"><a href="#">my account</a>
               </li>
-              <li class="menu-item-has-children"><a href="#">about Us</a>
+              <li class="menu-item-has-children"><a href="/about">about Us</a>
               </li>
               <li class="menu-item-has-children"><a href="#"> Contact Us</a>
               </li>
@@ -685,115 +632,3 @@
 </div>
 <!--Offcanvas menu area end-->
 
-<!--slider area start-->
-<section class="slider_section mt-30">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-9 offset-lg-3">
-        <div class="slider_area slider_two owl-carousel">
-          <div class="single_slider d-flex align-items-center" data-bgimg="client/img/slider/slider3.jpg"
-          >
-            <div class="slider_content slider_content_two content_position_center"
-            >
-              <h1>The NX-80</h1>
-              <span
-              >High-Fidelity Sound that takes <br/>                       your breath away                   </span>
-              <h2>
-                <span>form</span> $99 <span>00</span>
-              </h2>
-
-              <a href="#">shop now</a>
-            </div>
-          </div>
-          <div class="single_slider d-flex align-items-center" data-bgimg="client/img/slider/slider4.jpg"
-          >
-            <div class="slider_content slider_content_two content_position_left"
-            >
-              <h1>The NX-80</h1>
-              <span
-              >High-Fidelity Sound that takes <br/>                       your breath away                   </span>
-              <h2>
-                <span>form</span> $99 <span>00</span>
-              </h2>
-              <a href="#">shop now</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!--slider area end-->
-
-<!--category product area start-->
-<section class="category_product_area mt-30 mb-50">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="category_product_carousel category_column4 owl-carousel">
-          <div class="single_category_product">
-            <div class="category_product_thumb">
-              <a href="shop.html"><img src="client/img/category/category1.jpg" alt=""/></a>
-            </div>
-            <div class="category_product_name">
-              <h2>
-                <a href="/product/custom-build">Tự build PC</a></h2>
-            </div>
-          </div>
-          <div class="single_category_product">
-            <div class="category_product_thumb">
-              <a href="shop.html"><img src="client/img/category/category2.jpg" alt=""/></a>
-            </div>
-            <div class="category_product_name">
-              <h2>
-                <a href="shop.html">PC giả lập ảo hoá</a>
-              </h2>
-            </div>
-          </div>
-          <div class="single_category_product">
-            <div class="category_product_thumb">
-              <a href="shop.html"><img src="client/img/category/category3.jpg" alt=""/></a>
-            </div>
-            <div class="category_product_name">
-              <h2>
-                <a href="shop.html">máy tính văn phòng</a>
-              </h2>
-            </div>
-          </div>
-          <div class="single_category_product">
-            <div class="category_product_thumb">
-              <a href="shop.html"><img src="client/img/category/category4.jpg" alt=""/></a>
-            </div>
-            <div class="category_product_name">
-              <h2>
-                <a href="shop.html">màn hình gaming</a>
-              </h2>
-            </div>
-          </div>
-          <div class="single_category_product">
-            <div class="category_product_thumb">
-              <a href="shop.html"><img src="client/img/category/category5.jpg" alt=""/></a>
-            </div>
-            <div class="category_product_name">
-              <h2>
-                <a href="shop.html">Tư vấn build PC theo yêu cầu</a>
-              </h2>
-            </div>
-          </div>
-          <div class="single_category_product">
-            <div class="category_product_thumb">
-              <a href="shop.html"><img src="client/img/category/category2.jpg" alt=""/></a>
-            </div>
-            <div class="category_product_name">
-              <h2>
-                <a href="shop.html">PC WORKSTATION 3D RENDER</a>
-              </h2>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!--category product area end-->

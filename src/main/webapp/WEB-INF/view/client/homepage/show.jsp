@@ -27,10 +27,16 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="client/css/custom_style.css" />
+
+    <!-- JS CUSTOM -->
+    <script src="client/js/custom_style.js"></script>
 </head>
 <body>
 <%--Header--%>
 <jsp:include page="../layout/header.jsp" />
+
+<%--banner--%>
+<jsp:include page="../layout/banner.jsp" />
 
 <%--Content - Flash-sale --%>
 <jsp:include page="../product-list/flash-sale.jsp" />
@@ -63,7 +69,7 @@
 <!-- Main JS -->
 <script src="client/js/main.js"></script>
 
-<!-- JS CUSTOM -->
+
 
 </body>
 </html>

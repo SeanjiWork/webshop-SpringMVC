@@ -32,7 +32,7 @@
 </head>
 <body>
 <%--Header--%>
-<jsp:include page="../layout/header-full.jsp"/>
+<jsp:include page="../layout/header.jsp"/>
 
 <!--breadcrumbs area start-->
 <div class="breadcrumbs_area">
@@ -384,3 +384,17 @@
 
 </body>
 </html>
+<script>
+    function plusQuanlity(id) {
+        let quantity = document.getElementById("quantity");
+        let value = parseInt(quantity.value);
+        quantity.value = value + 1;
+    }
+
+    function minusQuanlity(id) {
+        let quantity = document.getElementById("quantity");
+        let value = parseInt(quantity.value);
+        if (value > 1) {
+            quantity.value = value - 1;
+        }
+    }
