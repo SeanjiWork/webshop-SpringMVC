@@ -59,44 +59,62 @@
             <div class="col-lg-12 col-md-12 mb-5">
                 <div class="account_form">
                     <h2>Register</h2>
-                    <form action="#" class="row">
+                    <form:form method="post" action="/register" modelAttribute="registerUser" class="row">
                         <div class="form-group mb-3 col-12 col-md-6">
                             <p>
                                 <label class="form-label">First name <span>*</span></label>
-                                <input type="text" class="form-control"/>
+                                <form:input type="text" placeholder="Enter your FisrtName" class="form-control" path="firstName"/>
                             </p>
                         </div>
                         <div class="form-group mb-3 col-12 col-md-6">
                             <p>
                                 <label class="form-label">Last name <span>*</span></label>
-                                <input type="text" class="form-control"/>
+                                <form:input type="text" placeholder="Enter your FisrtName" class="form-control" path="lastName"/>
                             </p>
                         </div>
 
                         <div class="form-group mb-3 col-12 col-md-12">
                             <p>
+                                <c:set var="errorEmail">
+                                    <form:errors path="email" cssClass="invalid-feedback" />
+                                </c:set>
                                 <label>Email <span>*</span></label>
-                                <input type="email"/>
+                                <form:input type="email" placeholder="Enter your Email"
+                                            class="form-control  ${not empty errorEmail ? 'is-invalid'
+                                            : ''}" path="email"/>
+                                ${errorEmail}
                             </p>
                         </div>
 
                         <div class="form-group mb-3 col-12 col-md-6">
                             <p>
+                                <c:set var="errorPassword">
+                                    <form:errors path="confirmPassword" cssClass="invalid-feedback" />
+                                </c:set>
                                 <label class="form-label">Password <span>*</span></label>
-                                <input type="password" class="form-control"/>
+                                <form:input type="password" placeholder="Enter your Password"
+                                            class="form-control  ${not empty errorPassword ? 'is-invalid'
+                                            : ''}" path="password"/>
+                                ${errorPassword}
                             </p>
                         </div>
 
                         <div class="form-group mb-3 col-12 col-md-6">
                             <p>
+                                <c:set var="errorConfirmPassword">
+                                    <form:errors path="confirmPassword" cssClass="invalid-feedback" />
+                                </c:set>
                                 <label class="form-label">Confirm password <span>*</span></label>
-                                <input type="password" class="form-control"/>
+                                <form:input type="password" placeholder="Confirm Password"
+                                            class="form-control  ${not empty errorConfirmPassword ? 'is-invalid'
+                                            : ''}" path="confirmPassword"/>
+                                ${errorConfirmPassword}
                             </p>
                         </div>
                         <div class="login_submit">
                             <button type="submit">Register</button>
                         </div>
-                    </form>
+                    </form:form>
                 </div>
             </div>
             <!--register area start-->

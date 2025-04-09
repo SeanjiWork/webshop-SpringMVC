@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 
 import com.webshop.domain.Role;
 import com.webshop.domain.User;
+import com.webshop.domain.dto.RegisterDTO;
 import com.webshop.repository.RoleRepository;
 import com.webshop.repository.UserRepository;
 
@@ -43,6 +44,19 @@ public class UserService {
 
     public Role getRoleByName(String name) {
        return this.roleRepository.findByName(name);
+    }
+
+    public User registerDTOtoUser(RegisterDTO registerDTO) {
+        User user = new User();
+
+        user.setFullname(registerDTO.getFirstName() + " " + registerDTO.getLastName());
+        user.setEmail(registerDTO.getEmail());
+        user.setPassword(registerDTO.getPassword());
+        return user;
+    }
+
+    public boolean checkEmailExist(String email) {
+        return this.userRepository.existsByEmail(email);
     }
 
 }
