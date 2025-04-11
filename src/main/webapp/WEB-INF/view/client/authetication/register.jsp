@@ -41,7 +41,7 @@
             <div class="col-12">
                 <div class="breadcrumb_content">
                     <ul>
-                        <li><a href="index.html">home</a></li>
+                        <li><a href="/">home</a></li>
                         <li>register</li>
                     </ul>
                 </div>
@@ -62,8 +62,13 @@
                     <form:form method="post" action="/register" modelAttribute="registerUser" class="row">
                         <div class="form-group mb-3 col-12 col-md-6">
                             <p>
+                                <c:set var="errorFirstName">
+                                    <form:errors path="firstName" cssClass="invalid-feedback" />
+                                </c:set>
                                 <label class="form-label">First name <span>*</span></label>
-                                <form:input type="text" placeholder="Enter your FisrtName" class="form-control" path="firstName"/>
+                                <form:input type="text" placeholder="Enter your FisrtName" class="form-control  ${not empty errorFirstName ? 'is-invalid'
+                                            : ''}" path="firstName"/>
+                                ${errorFirstName}
                             </p>
                         </div>
                         <div class="form-group mb-3 col-12 col-md-6">
@@ -113,6 +118,11 @@
                         </div>
                         <div class="login_submit">
                             <button type="submit">Register</button>
+                        </div>
+                        <div class="login_submit">
+                            <p>
+                                <a href="/login">Back to login</a>
+                            </p>
                         </div>
                     </form:form>
                 </div>

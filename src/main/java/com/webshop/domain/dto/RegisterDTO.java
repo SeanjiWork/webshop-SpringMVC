@@ -2,13 +2,19 @@ package com.webshop.domain.dto;
 
 import com.webshop.service.validator.RegisterChecked;
 
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.Size;
+
 @RegisterChecked
 public class RegisterDTO {
 
+    @Size(min = 3, message = "FirstName must be at least 3 characters")
     private String firstName;
     private String lastName;
+    @Email(message = "Email is not valid", regexp = "^[a-zA-Z0-9_!#$%&'*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+$")
     private String email;
     private String password;
+    @Size(min = 3, message = "ConfirmPassword must be at least 3 characters")
     private String confirmPassword;
 
 
