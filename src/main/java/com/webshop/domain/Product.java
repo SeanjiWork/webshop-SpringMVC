@@ -2,6 +2,7 @@ package com.webshop.domain;
 
 import java.util.List;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
@@ -26,6 +27,7 @@ public class Product extends BaseEntity {
 
     @NotNull
     @Size(min = 3, message = "detailDescription must be at least 3 characters")
+    @Column(columnDefinition = "MEDIUMTEXT")
     private String detailDescription;
     
     @NotNull

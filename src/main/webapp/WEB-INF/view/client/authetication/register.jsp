@@ -18,138 +18,110 @@
             href="/client/img/favicon.ico"
     />
 
-    <!-- CSS
-  ========================= -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css  ">
-    <!-- Plugins CSS -->
-    <link rel="stylesheet" href="/client/css/plugins.css"/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/client/css/login_style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
 
-    <!-- Main Style CSS -->
-    <link rel="stylesheet" href="/client/css/style.css"/>
+    <jsp:include page="../layout/login-banner.jsp"/>
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/client/css/custom_style.css"/>
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
 <body>
-<%--Header--%>
-<jsp:include page="../layout/header.jsp"/>
 
-<!--breadcrumbs area start-->
-<div class="breadcrumbs_area">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="breadcrumb_content">
-                    <ul>
-                        <li><a href="/">home</a></li>
-                        <li>register</li>
-                    </ul>
-                </div>
-            </div>
+<div class="container">
+    <div class="body d-md-flex align-items-center justify-content-between">
+        <div class="box-1 mt-md-0 mt-5">
+            <img src="/client/img/login-banner/login_banner2.jpg"
+                 class="" alt="">
         </div>
-    </div>
-</div>
-<!--breadcrumbs area end-->
-
-<!-- customer login start -->
-<div class="customer_login mt-60">
-    <div class="container">
-        <div class="row">
-            <!--register area start-->
-            <div class="col-lg-12 col-md-12 mb-5">
-                <div class="account_form">
-                    <h2>Register</h2>
+        <div class=" box-2 d-flex flex-column h-100">
+            <div class="mt-3">
+                <p class="mb-3 h-1">Register Account.</p>
+                <div class="form-group mb-4 col-12">
                     <form:form method="post" action="/register" modelAttribute="registerUser" class="row">
-                        <div class="form-group mb-3 col-12 col-md-6">
-                            <p>
-                                <c:set var="errorFirstName">
-                                    <form:errors path="firstName" cssClass="invalid-feedback" />
-                                </c:set>
-                                <label class="form-label">First name <span>*</span></label>
-                                <form:input type="text" placeholder="Enter your FisrtName" class="form-control  ${not empty errorFirstName ? 'is-invalid'
+                        <!-- FirstName input -->
+                        <div class="form-outline col-12 col-md-6 mb-2">
+                            <c:set var="errorFirstName">
+                                <form:errors path="firstName" cssClass="invalid-feedback" />
+                            </c:set>
+                            <label class="form-label">First name</label>
+                            <form:input type="text" class="form-control ${not empty errorFirstName ? 'is-invalid'
                                             : ''}" path="firstName"/>
-                                ${errorFirstName}
-                            </p>
-                        </div>
-                        <div class="form-group mb-3 col-12 col-md-6">
-                            <p>
-                                <label class="form-label">Last name <span>*</span></label>
-                                <form:input type="text" placeholder="Enter your FisrtName" class="form-control" path="lastName"/>
-                            </p>
+                            ${errorFirstName}
                         </div>
 
-                        <div class="form-group mb-3 col-12 col-md-12">
-                            <p>
-                                <c:set var="errorEmail">
-                                    <form:errors path="email" cssClass="invalid-feedback" />
-                                </c:set>
-                                <label>Email <span>*</span></label>
-                                <form:input type="email" placeholder="Enter your Email"
-                                            class="form-control  ${not empty errorEmail ? 'is-invalid'
+                        <!-- LastName input -->
+                        <div class="form-outline col-12 col-md-6 mb-2">
+                            <label class="form-label">Last name</label>
+                            <form:input class="form-control" path="lastName"/>
+                        </div>
+
+                        <!-- Email input -->
+                        <div class="form-outline col-12 mb-2">
+                            <c:set var="errorEmail">
+                                <form:errors path="email" cssClass="invalid-feedback" />
+                            </c:set>
+                            <label class="form-label">Email address</label>
+                            <form:input type="email" class="form-control  ${not empty errorEmail ? 'is-invalid'
                                             : ''}" path="email"/>
-                                ${errorEmail}
-                            </p>
+                            ${errorEmail}
                         </div>
 
-                        <div class="form-group mb-3 col-12 col-md-6">
-                            <p>
-                                <c:set var="errorPassword">
-                                    <form:errors path="confirmPassword" cssClass="invalid-feedback" />
-                                </c:set>
-                                <label class="form-label">Password <span>*</span></label>
-                                <form:input type="password" placeholder="Enter your Password"
-                                            class="form-control  ${not empty errorPassword ? 'is-invalid'
+                        <!-- Password input -->
+                        <div class="form-outline col-12 col-md-6 mb-4">
+                            <c:set var="errorPassword">
+                                <form:errors path="confirmPassword" cssClass="invalid-feedback" />
+                            </c:set>
+                            <label class="form-label">Password</label>
+                            <form:input type="password" class="form-control  ${not empty errorPassword ? 'is-invalid'
                                             : ''}" path="password"/>
-                                ${errorPassword}
-                            </p>
+                            ${errorPassword}
                         </div>
 
-                        <div class="form-group mb-3 col-12 col-md-6">
-                            <p>
-                                <c:set var="errorConfirmPassword">
-                                    <form:errors path="confirmPassword" cssClass="invalid-feedback" />
-                                </c:set>
-                                <label class="form-label">Confirm password <span>*</span></label>
-                                <form:input type="password" placeholder="Confirm Password"
-                                            class="form-control  ${not empty errorConfirmPassword ? 'is-invalid'
+                        <!-- Confirm Password input -->
+                        <div class="form-outline col-12 col-md-6 mb-4">
+                            <c:set var="errorConfirmPassword">
+                                <form:errors path="confirmPassword" cssClass="invalid-feedback" />
+                            </c:set>
+                            <label class="form-label">Confirm Password</label>
+                            <form:input type="password" class="form-control  ${not empty errorConfirmPassword ? 'is-invalid'
                                             : ''}" path="confirmPassword"/>
-                                ${errorConfirmPassword}
-                            </p>
+                            ${errorConfirmPassword}
                         </div>
-                        <div class="login_submit">
-                            <button type="submit">Register</button>
-                        </div>
-                        <div class="login_submit">
-                            <p>
-                                <a href="/login">Back to login</a>
-                            </p>
+
+                        <!-- 2 column grid layout for inline styling -->
+                        <div class="row mb-3">
+                            <div class="text-center">
+                                <button class="btn btn-primary mb-3" type="submit">Register</button>
+                            </div>
                         </div>
                     </form:form>
-                </div>
-            </div>
-            <!--register area start-->
 
+                </div>
+
+                <p class="text-muted mb-2">Share your thoughts with the world today.</p>
+                    <div class="mt-3">
+                        <p class="mb-1 text-muted">Already have an account?</p>
+                        <a href="/login">
+                            <div class="btn btn-primary">
+                                Log in<span class="fas fa-chevron-right ms-1"></span>
+                            </div>
+                        </a>
+                    </div>
+            </div>
+                <div class="mt-auto">
+                    <p class="footer text-muted mb-0 mt-md-0 mt-4">By register you agree with our
+                        <span class="p-color me-1">terms and conditions</span>and
+                        <span class="p-color ms-1">privacy policy</span>
+                    </p>
+                </div>
         </div>
     </div>
 </div>
-<!-- customer login end -->
-
-
-<%--Footer--%>
-<jsp:include page="../layout/footer.jsp"/>
-
-
-<!-- JS
-============================================ -->
-
-<!-- Plugins JS -->
-<script src="/client/js/plugins.js"></script>
-
-<!-- Main JS -->
-<script src="/client/js/main.js"></script>
-
-<!-- Custom_style JS -->
-<script src="/client/js/custom_style.js"></script>
 
 </body>
 </html>
