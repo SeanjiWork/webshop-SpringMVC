@@ -45,16 +45,37 @@
                   <li><a href="#">Germany</a></li>
                 </ul>
               </li>
-              <li class="top_links"><a href="#"><i class="zmdi zmdi-account"></i> My account <i
-                        class="zmdi zmdi-caret-down"></i></a>
-                <ul class="dropdown_links">
-                  <li><a href="/checkout">Checkout </a></li>
-                  <li><a href="/my-account">My Account </a></li>
-                  <li><a href="/cart">Shopping Cart</a></li>
-                  <li><a href="#">Wishlist</a></li>
-                  <li><a href="/login">Login</a></li>
-                </ul>
-              </li>
+              <c:if test="${not empty pageContext.request.userPrincipal}">
+                <%--                User <c:out value="${pageContext.request.userPrincipal.name}" />--%>
+                <li class="top_links">
+                  <a href="#">
+                    <i class="zmdi zmdi-account"></i>
+                    My account
+                    <i class="zmdi zmdi-caret-down"></i>
+                  </a>
+                  <ul class="dropdown_links">
+                    <li><c:out value="${pageContext.request.userPrincipal.name}" /></li>
+                    <li><a href="#">My Account </a></li>
+                    <li><a href="/checkout">Checkout </a></li>
+                    <li><a href="/cart">Shopping Cart</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                    <li>
+                      <form method="post" action="/logout">
+                        <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+                        <button ></button>
+                      </form>
+                    </li>
+                  </ul>
+                </li>
+              </c:if>
+
+              <c:if test="${empty pageContext.request.userPrincipal}">
+              <li class="top_links">
+                <a href="/login">
+                  <i class="zmdi zmdi-account"></i>
+                  Login
+                </a>
+                </c:if>
             </ul>
           </div>
         </div>
@@ -451,15 +472,34 @@
                   <li><a href="#">Germany</a></li>
                 </ul>
               </li>
-              <li class="top_links"><a href="#"><i class="zmdi zmdi-account"></i> My account <i
-                        class="zmdi zmdi-caret-down"></i></a>
-                <ul class="dropdown_links">
-                  <li><a href="/checkout">Checkout </a></li>
-                  <li><a href="my-account.html">My Account </a></li>
-                  <li><a href="/cart">Shopping Cart</a></li>
-                  <li><a href="wishlist.html">Wishlist</a></li>
-                </ul>
-              </li>
+              <c:if test="${not empty pageContext.request.userPrincipal}">
+<%--                User <c:out value="${pageContext.request.userPrincipal.name}" />--%>
+                <li class="top_links">
+                  <a href="#">
+                    <i class="zmdi zmdi-account"></i>
+                      My account
+                    <i class="zmdi zmdi-caret-down"></i>
+                  </a>
+                  <ul class="dropdown_links">
+                    <li><a href="/checkout">Checkout </a></li>
+                    <li><a href="/checkout">Checkout </a></li>
+                    <li><a href="#">My Account </a></li>
+                    <li><a href="/cart">Shopping Cart</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                  </ul>
+                </li>
+              </c:if>
+
+            <c:if test="${empty pageContext.request.userPrincipal}">
+              <li class="top_links">
+                <a href="/login">
+                  <i class="zmdi zmdi-account"></i>
+                  Login
+                </a>
+            </c:if>
+
+
+
             </ul>
           </div>
           <div class="search-container">
